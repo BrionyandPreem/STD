@@ -39,12 +39,31 @@
         <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
             <a href="index.html" class="hover:text-[#4FA3D1] transition">หน้าแรก</a>
                 <a href="about us.html" class="hover:text-[#4FA3D1] transition">เกี่ยวกับเรา</a>
-                <a href="services.html" class="hover:text-[#4FA3D1] transition">บริการ</a>
+                <div class="relative group">
+                <button class="flex items-center hover:text-[#4FA3D1] transition py-2">บริการ
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                
+                <div class="absolute left-0 mt-0 w-56 bg-white rounded-xl shadow-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:mt-2 transition-all duration-300">
+                    <a href="services.html#ndt" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานตรวจสอบ NDT</a>
+                    <a href="services.html#gas" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานก๊าซธรรมชาติ</a>
+                    <a href="services.html#lpg" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานก๊าซ LPG</a>
+                    <hr class="my-1 border-gray-100">
+                    <a href="services.html" class="block px-6 py-2 text-[#4FA3D1] font-bold text-xs uppercase">ดูบริการทั้งหมด</a>
+                </div>
+            </div>
                 <a href="article.html" class="hover:text-[#4FA3D1] transition">บทความ</a>
 				<a href="projects0.html" class="hover:text-[#4FA3D1] transition">ผลงาน</a>
 				<a href="contact.html" class="hover:text-[#4FA3D1] transition">ติดต่อเรา</a>
             <a href="quotation.html" class="bg-[#4FA3D1] px-5 py-2 rounded-full hover:bg-white hover:text-[#0A1F33] transition shadow-lg">ขอใบเสนอราคา</a>
-        </div>
+        
+<div class="hidden md:flex items-center space-x-2 text-sm font-bold ml-4 border-l border-gray-600 pl-4">
+    <button onclick="changeLang('th')" id="btn-th" class="px-2 py-1 rounded transition-all duration-300 text-[#4FA3D1] border border-[#4FA3D1]">TH</button>
+    <span class="text-gray-500">|</span>
+    <button onclick="changeLang('en')" id="btn-en" class="px-2 py-1 rounded transition-all duration-300 text-gray-400 hover:text-white">EN</button>
+</div>
+		 </div>
+		 
 
         <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,6 +80,10 @@
 		<a href="projects0.html" class="block text-lg hover:text-[#4FA3D1]">ผลงาน</a>
         <a href="contact.html" class="block text-lg hover:text-[#4FA3D1]">ติดต่อเรา</a>
 		<a href="quotation.html" class="block text-lg text-[#4FA3D1] font-bold">ขอใบเสนอราคา</a>
+		<div class="flex items-center space-x-2"> <div class="flex md:hidden items-center bg-gray-800/50 rounded-lg p-1 border border-gray-700">
+        <button onclick="changeLang('th')" id="btn-th-mobile" class="px-2 py-1 text-[10px] font-bold rounded transition-all duration-300 text-[#4FA3D1] bg-gray-700 shadow-sm">TH</button>
+        <button onclick="changeLang('en')" id="btn-en-mobile" class="px-2 py-1 text-[10px] font-bold rounded transition-all duration-300 text-gray-400">EN</button>
+    </div>
     </div>
 </nav>
 	
@@ -68,7 +91,7 @@
 <section class="relative py-24 bg-[#0A1F33] text-white">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div data-aos="fade-right">
-            <h1 class="text-[#4FA3D1] font-bold tracking-[0.2em] mb-4 uppercase text-sm">Since 20XX</h1>
+            <h1 class="text-[#4FA3D1] font-bold tracking-[0.2em] mb-4 uppercase text-sm">Since 2020</h1>
             <h2 class="text-4xl md:text-5xl font-bold mb-6">ความเชื่อมั่นที่สร้างจาก <br><span class="text-white">มาตรฐานทางวิศวกรรม</span></h2>
             <p class="text-gray-400 text-lg leading-relaxed mb-6">
                 บริษัท เอสทีดี เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (STD) คือผู้เชี่ยวชาญด้านงานตรวจสอบและทดสอบโดยไม่ทำลายธรรมชาติ
@@ -84,6 +107,124 @@
             <img src="https://images.unsplash.com/photo-1541913057-251c294a089b?auto=format&fit=crop&q=80" 
                  alt="Engineering Structure" 
                  class="rounded-xl shadow-2xl relative z-10 border-l-8 border-[#4FA3D1]">
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-gray-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-[#0A1F33] mb-4" data-aos="fade-down">โครงสร้างบุคลากรของบริษัท</h2>
+        <div class="w-24 h-1 bg-[#4FA3D1] mx-auto mb-16"></div>
+
+        <div class="flex justify-center mb-20 relative">
+            <div class="bg-[#0A1F33] text-white p-6 rounded-2xl shadow-2xl w-80 border-b-8 border-[#4FA3D1] z-10" data-aos="zoom-in">
+                <p class="font-bold text-xl">นางสาว สุธิดา อุทัยรัตน์</p>
+                <p class="text-[#4FA3D1] text-sm uppercase tracking-widest mt-1">ผู้บริหาร (CEO)</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20 relative">
+            <div class="bg-white p-5 rounded-xl shadow-lg border-t-4 border-blue-500" data-aos="fade-right">
+                <p class="font-bold text-lg text-gray-800">นาย สุรพงษ์ เสมอใจ</p>
+                <p class="text-blue-500 text-sm font-semibold">วุฒิวิศวกร</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-lg border-t-4 border-pink-400" data-aos="fade-left">
+                <p class="font-bold text-lg text-gray-800">นางสาว ณัฐรัตน์ ลิ้วนภโรจน์</p>
+                <p class="text-pink-400 text-sm font-semibold">แผนกบัญชีและการเงิน</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-16">
+            <div class="bg-[#1F3B57] text-white p-4 rounded-lg shadow-md" data-aos="flip-up">
+                <p class="font-bold text-sm">นาย เติมศักดิ์ จาณาประโยชน์</p>
+                <p class="text-blue-300 text-xs">วุฒิวิศวกร (โครงการ)</p>
+            </div>
+            <div class="bg-[#1F3B57] text-white p-4 rounded-lg shadow-md" data-aos="flip-up" data-aos-delay="100">
+                <p class="font-bold text-sm">นาย ธีระพงษ์ แซ่ซุ่น</p>
+                <p class="text-blue-300 text-xs">หัวหน้าแผนกวิศวกรรม</p>
+            </div>
+            <div class="bg-[#1F3B57] text-white p-4 rounded-lg shadow-md" data-aos="flip-up" data-aos-delay="200">
+                <p class="font-bold text-sm">นางสาว ลัยพันธุ์ จันหรังษี</p>
+                <p class="text-blue-300 text-xs">หัวหน้าแผนกการตลาด</p>
+            </div>
+            <div class="bg-[#1F3B57] text-white p-4 rounded-lg shadow-md" data-aos="flip-up" data-aos-delay="300">
+                <p class="font-bold text-sm">นางสาว วรรณภา ด้วงแค</p>
+                <p class="text-blue-300 text-xs">หัวหน้าแผนกประสานงาน</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+            
+            <div class="space-y-4">
+                <h3 class="font-bold text-[#0A1F33] border-l-4 border-[#4FA3D1] pl-3 mb-4">Engineering & Safety</h3>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100" data-aos="fade-up">
+                    <p class="font-bold">นาย พศิน พวงหร้อย</p>
+                    <p class="text-gray-500 text-xs">วิศวกรไฟฟ้าและ Safety</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100" data-aos="fade-up">
+                    <p class="font-bold">นาย ชนัย ระดิ่งหิน</p>
+                    <p class="text-gray-500 text-xs">วิศวกรโยธา</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100" data-aos="fade-up">
+                    <p class="font-bold">นาย สิทธิชัย ลิ้วตระกูล</p>
+                    <p class="text-gray-500 text-xs">ช่างเทคนิค</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100" data-aos="fade-up">
+                    <p class="font-bold">นาย ฉัตรมงคล เพ็ชรแสงใส</p>
+                    <p class="text-gray-500 text-xs">ช่างเทคนิค</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="font-bold text-[#0A1F33] border-l-4 border-[#4FA3D1] pl-3 mb-4">Mechanical & Projects</h3>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100" data-aos="fade-up">
+                    <p class="font-bold">นาย ณรงค์เดช แซ่ซุ่น</p>
+                    <p class="text-gray-500 text-xs">วิศวกรเครื่องกล</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100" data-aos="fade-up">
+                    <p class="font-bold text-lg text-blue-600">นาย เอกชัย เงินสมทอง</p>
+                    <p class="text-gray-500 text-xs">วิศวกร API</p>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="bg-gray-100 p-3 rounded-lg text-[10px]">
+                        <p class="font-bold">นาย ณธพงศ์ นันชัยศิลป์</p>
+                        <p>วิศวกรเครื่องกล</p>
+                    </div>
+                    <div class="bg-gray-100 p-3 rounded-lg text-[10px]">
+                        <p class="font-bold">นาย ณัฏฐนนท์ แสงสวรรณ</p>
+                        <p>วิศวกรเครื่องกล</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100" data-aos="fade-up">
+                    <p class="font-bold">นาย ปริญญา วัฒนเกียรติดำรง / นาย จิณพรต ทองเส็ง</p>
+                    <p class="text-gray-500 text-xs">วิศวกรโยธา / เครื่องกล</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100" data-aos="fade-up">
+                    <p class="font-bold">นาย ศักรินทร์ มูลสุวรรณ / นาย ปฏิวัติ โคกชาย</p>
+                    <p class="text-gray-500 text-xs">วิศวกร / ช่างเทคนิค</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="font-bold text-[#0A1F33] border-l-4 border-[#4FA3D1] pl-3 mb-4">Marketing & Admin</h3>
+                <div class="bg-[#F0F9FF] p-4 rounded-xl shadow-sm border border-blue-100" data-aos="fade-up">
+                    <p class="font-bold">นาย อรรถพงษ์ พัดลม</p>
+                    <p class="text-blue-600 text-xs uppercase font-bold">แผนกการตลาด</p>
+                </div>
+                <div class="bg-[#F0F9FF] p-4 rounded-xl shadow-sm border border-blue-100" data-aos="fade-up">
+                    <p class="font-bold">นางสาว นันท์พัสตร์ ยิ้มกริ่ม</p>
+                    <p class="text-blue-600 text-xs font-bold">แผนกการตลาด</p>
+                </div>
+                <div class="bg-[#F0F9FF] p-4 rounded-xl shadow-sm border border-blue-100" data-aos="fade-up">
+                    <p class="font-bold">นางสาว พิศา โชติวิไลวรรณ</p>
+                    <p class="text-blue-600 text-xs font-bold">แผนกการตลาด</p>
+                </div>
+                <div class="bg-pink-50 p-4 rounded-xl shadow-sm border border-pink-100" data-aos="fade-up">
+                    <p class="font-bold">นางสาว สุดฤทัย บุญมี</p>
+                    <p class="text-pink-600 text-xs font-bold uppercase">Admin / ประสานงาน</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -203,6 +344,32 @@
     <script>
         AOS.init({ once: true });
     </script>
+	
+<script>
+function changeLang(lang) {
+    const thElements = document.querySelectorAll('.lang-th');
+    const enElements = document.querySelectorAll('.lang-en');
+
+    if (lang === 'en') {
+        thElements.forEach(el => el.classList.add('hidden'));
+        enElements.forEach(el => el.classList.remove('hidden'));
+    } else {
+        enElements.forEach(el => el.classList.add('hidden'));
+        thElements.forEach(el => el.classList.remove('hidden'));
+    }
+
+    const allThBtns = [document.getElementById('btn-th'), document.getElementById('btn-th-mobile')];
+    const allEnBtns = [document.getElementById('btn-en'), document.getElementById('btn-en-mobile')];
+
+    if (lang === 'en') {
+        allEnBtns.forEach(btn => btn?.classList.add('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
+        allThBtns.forEach(btn => btn?.classList.remove('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
+    } else {
+        allThBtns.forEach(btn => btn?.classList.add('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
+        allEnBtns.forEach(btn => btn?.classList.remove('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
+    }
+}
+</script>	
 	
 </body>
 </html>

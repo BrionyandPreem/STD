@@ -18,7 +18,7 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
- <script>
+<script>
     <button id="mobile-menu-button" class="md:hidden text-white p-2">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -39,12 +39,31 @@
         <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
             <a href="index.html" class="hover:text-[#4FA3D1] transition">หน้าแรก</a>
                 <a href="about us.html" class="hover:text-[#4FA3D1] transition">เกี่ยวกับเรา</a>
-                <a href="services.html" class="hover:text-[#4FA3D1] transition">บริการ</a>
+                <div class="relative group">
+                <button class="flex items-center hover:text-[#4FA3D1] transition py-2">บริการ
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                
+                <div class="absolute left-0 mt-0 w-56 bg-white rounded-xl shadow-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:mt-2 transition-all duration-300">
+                    <a href="services.html#ndt" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานตรวจสอบ NDT</a>
+                    <a href="services.html#gas" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานก๊าซธรรมชาติ</a>
+                    <a href="services.html#lpg" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานก๊าซ LPG</a>
+                    <hr class="my-1 border-gray-100">
+                    <a href="services.html" class="block px-6 py-2 text-[#4FA3D1] font-bold text-xs uppercase">ดูบริการทั้งหมด</a>
+                </div>
+            </div>
                 <a href="article.html" class="hover:text-[#4FA3D1] transition">บทความ</a>
 				<a href="projects0.html" class="hover:text-[#4FA3D1] transition">ผลงาน</a>
 				<a href="contact.html" class="hover:text-[#4FA3D1] transition">ติดต่อเรา</a>
             <a href="quotation.html" class="bg-[#4FA3D1] px-5 py-2 rounded-full hover:bg-white hover:text-[#0A1F33] transition shadow-lg">ขอใบเสนอราคา</a>
-        </div>
+        
+<div class="hidden md:flex items-center space-x-2 text-sm font-bold ml-4 border-l border-gray-600 pl-4">
+    <button onclick="changeLang('th')" id="btn-th" class="px-2 py-1 rounded transition-all duration-300 text-[#4FA3D1] border border-[#4FA3D1]">TH</button>
+    <span class="text-gray-500">|</span>
+    <button onclick="changeLang('en')" id="btn-en" class="px-2 py-1 rounded transition-all duration-300 text-gray-400 hover:text-white">EN</button>
+</div>
+		 </div>
+		 
 
         <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,6 +80,10 @@
 		<a href="projects0.html" class="block text-lg hover:text-[#4FA3D1]">ผลงาน</a>
         <a href="contact.html" class="block text-lg hover:text-[#4FA3D1]">ติดต่อเรา</a>
 		<a href="quotation.html" class="block text-lg text-[#4FA3D1] font-bold">ขอใบเสนอราคา</a>
+		<div class="flex items-center space-x-2"> <div class="flex md:hidden items-center bg-gray-800/50 rounded-lg p-1 border border-gray-700">
+        <button onclick="changeLang('th')" id="btn-th-mobile" class="px-2 py-1 text-[10px] font-bold rounded transition-all duration-300 text-[#4FA3D1] bg-gray-700 shadow-sm">TH</button>
+        <button onclick="changeLang('en')" id="btn-en-mobile" class="px-2 py-1 text-[10px] font-bold rounded transition-all duration-300 text-gray-400">EN</button>
+    </div>
     </div>
 </nav>
 	
@@ -85,7 +108,7 @@
                 <div class="p-6">
                     <div class="text-gray-400 text-xs mb-3">12 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</div>
                     <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">STD คืออะไร? ทำไมโรงงานอุตสาหกรรมต้องตรวจสอบทุกปี</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4">เจาะลึกความสำคัญของการทดสอบโดยไม่ทำลายธรรมชาติ และมาตรฐานที่กฎหมายกำหนด...</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">เจาะลึกความสำคัญของการทดสอบโดยไม่ทำลาย(NDT) และมาตรฐานที่กฎหมายกำหนด...</p>
                     <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
                 </div>
             </article>
@@ -164,6 +187,32 @@
     <script>
         AOS.init({ once: true });
     </script>
+	
+<script>
+function changeLang(lang) {
+    const thElements = document.querySelectorAll('.lang-th');
+    const enElements = document.querySelectorAll('.lang-en');
+
+    if (lang === 'en') {
+        thElements.forEach(el => el.classList.add('hidden'));
+        enElements.forEach(el => el.classList.remove('hidden'));
+    } else {
+        enElements.forEach(el => el.classList.add('hidden'));
+        thElements.forEach(el => el.classList.remove('hidden'));
+    }
+
+    const allThBtns = [document.getElementById('btn-th'), document.getElementById('btn-th-mobile')];
+    const allEnBtns = [document.getElementById('btn-en'), document.getElementById('btn-en-mobile')];
+
+    if (lang === 'en') {
+        allEnBtns.forEach(btn => btn?.classList.add('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
+        allThBtns.forEach(btn => btn?.classList.remove('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
+    } else {
+        allThBtns.forEach(btn => btn?.classList.add('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
+        allEnBtns.forEach(btn => btn?.classList.remove('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
+    }
+}
+</script>	
 	
 </body>
 </html>
