@@ -17,11 +17,12 @@ gsap.to(".service-card", {
 });
 // ตัวอย่างสร้างอนุภาควิ่งๆ เป็นพื้นหลัง (Conceptual Code)
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.2, 1000);
 const renderer = new THREE.WebGLRenderer({ alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('canvas-container').appendChild(renderer.domElement);
 
 const geometry = new THREE.BufferGeometry();
 // ... ใส่ Code สร้างจุดอนุภาค (Particles) แทนโครงสร้างโมเลกุลหรือท่อส่งก๊าซ ...
+
 // เมื่อ User ขยับเมาส์ อนุภาคจะค่อยๆ ขยับตาม
