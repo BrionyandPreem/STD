@@ -47,6 +47,131 @@
 		lang-en { display: none; }
         .active-lang-btn { color: #4FA3D1 !important; border: 1px solid #4FA3D1 !important; }
 
+
+        footer {
+    background: linear-gradient(180deg, #0A1F33 0%, #162C46 100%); /* ไล่เฉดสีน้ำเงินเข้ม */
+    color: #ffffff;
+    padding: 80px 0 30px;
+    font-family: 'Prompt', sans-serif;
+    border-top: 1px solid rgba(79, 163, 209, 0.3); /* เส้นขอบฟ้าบางๆ ด้านบน */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr; /* จัดสัดส่วน 4 คอลัมน์ */
+    gap: 40px;
+}
+
+/* หัวข้อแต่ละคอลัมน์ */
+footer h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* โลโก้ใน Footer */
+.footer-logo h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.footer-logo h2 span {
+    color: #4FA3D1; /* สีฟ้าสว่างตรงคำว่า ENGINEERING */
+}
+.footer-logo p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* จัดการลิงก์ต่างๆ */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+.footer-links ul li a:hover {
+    color: #4FA3D1;
+    padding-left: 5px;
+}
+
+/* ข้อมูลติดต่อ */
+.footer-contact p {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+.footer-contact i {
+    color: #4FA3D1;
+    margin-top: 5px;
+}
+
+/* ปุ่ม Social Media แบบวงกลมในรูป */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1); /* วงกลมโปร่งแสง */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background: #4FA3D1;
+    transform: translateY(-3px);
+}
+
+/* เส้นขีดล่างและข้อความ Copyright */
+.footer-bottom {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+/* ปรับแต่งให้ดูดีในมือถือ */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-contact p {
+        justify-content: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+
+#mobile-menu li {
+    list-style: none !important;
+}
     </style>
 </head>
 
@@ -120,27 +245,58 @@
         </button>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-[#0A1F33] border-t border-white/10 px-6 py-6 space-y-4">
-        <a href="index.html" class="block text-lg hover:text-[#4FA3D1]">หน้าแรก</a>
-        <a href="about us.html" class="block text-lg hover:text-[#4FA3D1]">เกี่ยวกับเรา</a>
-       <li class="nav-item">
-                    <a href="services.html" class="nav-link">บริการ <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown">
-                        <a href="ngv.html"><i class="fas fa-gas-pump"></i> ตรวจสอบก๊าซธรรมชาติ (CNG/NGV)</a>
-                        <a href="#"><i class="fas fa-fire"></i> ตรวจสอบก๊าซหุงต้ม (LPG)</a>
-                        <a href="#"><i class="fas fa-oil-can"></i> ตรวจสอบคลังน้ำมันเชื้อเพลิง</a>
-                        <a href="#"><i class="fas fa-pencil-ruler"></i> เขียนแบบและรายการคำนวณวิศวกรรม</a>
-						<a href="ndt.html"><i class="fas fa-search"></i> งานตรวจสอบ NDT (PT, MT, RT, UT)</a>
-                    </div>
-                </li>
-        <a href="article.html" class="block text-lg hover:text-[#4FA3D1]">บทความ</a>
-		<a href="projects0.html" class="block text-lg hover:text-[#4FA3D1]">ผลงาน</a>
-        <a href="contact.html" class="block text-lg hover:text-[#4FA3D1]">ติดต่อเรา</a>
-		<a href="quotation.html" class="block text-lg text-[#4FA3D1] font-bold">ขอใบเสนอราคา</a>
-		<div class="flex items-center space-x-2"> <div class="flex md:hidden items-center bg-gray-800/50 rounded-lg p-1 border border-gray-700">
-        <button onclick="changeLang('th')" id="btn-th-mobile" class="px-2 py-1 text-[10px] font-bold rounded transition-all duration-300 text-[#4FA3D1] bg-gray-700 shadow-sm">TH</button>
-        <button onclick="changeLang('en')" id="btn-en-mobile" class="px-2 py-1 text-[10px] font-bold rounded transition-all duration-300 text-gray-400">EN</button>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0A1F33] border-t border-white/10 px-6 py-8 space-y-6">
+    <a href="index.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">หน้าแรก</span>
+        <span class="lang-en hidden">Home</span>
+    </a>
+
+    <a href="about us.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">เกี่ยวกับเรา</span>
+        <span class="lang-en hidden">About Us</span>
+    </a>
+
+    <li class="nav-item">
+	    <a href="services.html" class="block text-lg hover:text-[#4FA3D1] transition">
+            <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
+            <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+        </a>
+        <div class="dropdown">
+            <a href="ngv.html"><i class="fas fa-gas-pump mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบก๊าซธรรมชาติ (CNG/NGV)</span><span class="lang-en hidden">NGV/CNG Inspection</span></a>
+            <a href="#"><i class="fas fa-fire mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบก๊าซหุงต้ม (LPG)</span><span class="lang-en hidden">LPG Inspection</span></a>
+            <a href="#"><i class="fas fa-oil-can mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบคลังน้ำมันเชื้อเพลิง</span><span class="lang-en hidden">Fuel Terminal Inspection</span></a>
+            <a href="#"><i class="fas fa-pencil-ruler mr-2 text-[#4FA3D1]"></i> <span class="lang-th">เขียนแบบและรายการคำนวณ</span><span class="lang-en hidden">Engineering Design</span></a>
+            <a href="ndt.html"><i class="fas fa-search mr-2 text-[#4FA3D1]"></i> <span class="lang-th">งานตรวจสอบ NDT</span><span class="lang-en hidden">NDT Services</span></a>
+        </div>
+    </li>
+
+    <a href="article.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">บทความ</span>
+        <span class="lang-en hidden">Articles</span>
+    </a>
+
+    <a href="projects0.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">ผลงาน</span>
+        <span class="lang-en hidden">Projects</span>
+    </a>
+
+    <a href="contact.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">ติดต่อเรา</span>
+        <span class="lang-en hidden">Contact Us</span>
+    </a>
+
+    <a href="quotation.html" class="block text-center bg-[#4FA3D1] text-white py-3 rounded-xl font-bold shadow-lg">
+        <span class="lang-th">ขอใบเสนอราคา</span>
+        <span class="lang-en hidden">Request a Quotation</span>
+    </a>
+
+    <div class="flex items-center justify-center pt-4">
+        <div class="flex items-center bg-gray-800/80 rounded-full p-1 border border-gray-700 w-32 justify-between">
+            <button onclick="changeLang('th')" id="btn-th-mobile" class="flex-1 py-1.5 text-xs font-bold rounded-full transition-all duration-300 text-[#4FA3D1] bg-gray-700 shadow-sm">TH</button>
+            <button onclick="changeLang('en')" id="btn-en-mobile" class="flex-1 py-1.5 text-xs font-bold rounded-full transition-all duration-300 text-gray-400">EN</button>
+        </div>
     </div>
+</div>
     </div>
 </nav>
 
@@ -324,14 +480,84 @@
     });
 </script>
 
- <footer class="bg-[#0A1F33] text-gray-400 py-10 text-center text-sm border-t border-white/5">
-        &copy; 2026 STD Engineering & Construction Co., Ltd. All Rights Reserved.
-    </footer>
+ <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>STD <span>ENGINEERING</span></h2>
+            <p>
+                <span class="lang-th">ผู้นำด้านการตรวจสอบทางวิศวกรรม (NDT) และระบบก๊าซธรรมชาติ ด้วยมาตรฐานสากลและทีมวิศวกรผู้เชี่ยวชาญ เพื่อความปลอดภัยและประสิทธิภาพสูงสุดของธุรกิจคุณ</span>
+                <span class="lang-en hidden">Leading provider of engineering inspection (NDT) and gas systems. With international standards and expert engineers for your business safety and efficiency.</span>
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>
+                <span class="lang-th">เมนูแนะนำ</span>
+                <span class="lang-en hidden">Quick Links</span>
+            </h3>
+            <ul>
+                <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en hidden">Home</span></a></li>
+                <li><a href="about.html"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en hidden">About Us</span></a></li>
+                <li><a href="services.html"><span class="lang-th">บริการของเรา</span><span class="lang-en hidden">Our Services</span></a></li>
+                <li><a href="ndt.html"><span class="lang-th">งาน NDT</span><span class="lang-en hidden">NDT Services</span></a></li>
+                <li><a href="article.html"><span class="lang-th">บทความ</span><span class="lang-en hidden">Articles</span></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h3>
+                <span class="lang-th">บริการ</span>
+                <span class="lang-en hidden">Services</span>
+            </h3>
+            <ul>
+                <li><a href="#"><span class="lang-th">ตรวจสอบก๊าซ NGV/LPG</span><span class="lang-en hidden">NGV/LPG Inspection</span></a></li>
+                <li><a href="#"><span class="lang-th">ตรวจสอบคลังน้ำมัน</span><span class="lang-en hidden">Fuel Terminal Inspection</span></a></li>
+                <li><a href="#"><span class="lang-th">งานเขียนแบบคำนวณ</span><span class="lang-en hidden">Engineering Design</span></a></li>
+                <li><a href="#"><span class="lang-th">ตรวจสอบรับรองความปลอดภัย</span><span class="lang-en hidden">Safety Certification</span></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>
+                <span class="lang-th">ติดต่อเรา</span>
+                <span class="lang-en hidden">Contact Us</span>
+            </h3>
+            <p><i class="fas fa-map-marker-alt"></i> 
+                <span class="lang-th">60/9 หมู่ที่ 5 ต.มาบยางพร อ.ปลวกแดง จ.ระยอง 21140</span>
+                <span class="lang-en hidden">60/9 Moo 5, Mab Yang Porn, Pluak Daeng, Rayong 21140</span>
+            </p>
+            <p><i class="fas fa-phone-alt"></i> 08x-xxx-xxxx</p>
+            <p><i class="fas fa-envelope"></i> info@std-engineering.co.th</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 STD Engineering & Inspection Co., Ltd. All Rights Reserved.</p>
+    </div>
+</footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ once: true });
     </script>
+	
+	<script>
+function toggleMobileDropdown() {
+    const list = document.getElementById('mobile-services-list');
+    const arrow = document.getElementById('arrow-icon');
+    
+    // สลับการแสดงผล
+    list.classList.toggle('hidden');
+    
+    // ทำให้ลูกศรหมุนกลับหัวตอนเปิด
+    arrow.classList.toggle('rotate-180');
+}
+</script>
 	
 <script>
 function changeLang(lang) {
