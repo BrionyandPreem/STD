@@ -7,13 +7,171 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <style>
-        body { font-family: 'Prompt', sans-serif; }
+           body { font-family: 'Prompt', sans-serif; }
         .hero-gradient {
             background: linear-gradient(rgba(10, 31, 51, 0.8), rgba(10, 31, 51, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80');
             background-size: cover;
             background-position: center;
         }
+		
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
+        display: flex;
+        width: max-content;
+    }
+	.nav-item { position: relative; }
+        .dropdown {
+            position: absolute; top: 250%; left: 0; background: rgba(10, 23, 36, 0.98);
+            min-width: 280px; border-radius: 12px; padding: 15px 0;
+            opacity: 0; visibility: hidden; transform: translateY(10px);
+            transition: var(--transition); border: 1px solid var(--accent);box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .nav-item:hover .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown a {
+            display: block; color: white; padding: 12px 25px; text-decoration: none;
+            font-size: 0.85rem; transition: 0.3s;
+        }
+        .dropdown a:hover { background: var(--accent); color: var(--navy); padding-left: 35px; }
+		
+		.nav-item::after {
+		    content: ""; position: absolute; top: 100%; left: 0; width: 100%; height: 20px;
+        }
+		
+		lang-en { display: none; }
+        .active-lang-btn { color: #4FA3D1 !important; border: 1px solid #4FA3D1 !important; }
+
+
+        footer {
+    background: linear-gradient(180deg, #0A1F33 0%, #162C46 100%); /* ไล่เฉดสีน้ำเงินเข้ม */
+    color: #ffffff;
+    padding: 80px 0 30px;
+    font-family: 'Prompt', sans-serif;
+    border-top: 1px solid rgba(79, 163, 209, 0.3); /* เส้นขอบฟ้าบางๆ ด้านบน */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr; /* จัดสัดส่วน 4 คอลัมน์ */
+    gap: 40px;
+}
+
+/* หัวข้อแต่ละคอลัมน์ */
+footer h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* โลโก้ใน Footer */
+.footer-logo h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.footer-logo h2 span {
+    color: #4FA3D1; /* สีฟ้าสว่างตรงคำว่า ENGINEERING */
+}
+.footer-logo p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* จัดการลิงก์ต่างๆ */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+.footer-links ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+.footer-links ul li a:hover {
+    color: #4FA3D1;
+    padding-left: 5px;
+}
+
+/* ข้อมูลติดต่อ */
+.footer-contact p {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+.footer-contact i {
+    color: #4FA3D1;
+    margin-top: 5px;
+}
+
+/* ปุ่ม Social Media แบบวงกลมในรูป */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1); /* วงกลมโปร่งแสง */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background: #4FA3D1;
+    transform: translateY(-3px);
+}
+
+/* เส้นขีดล่างและข้อความ Copyright */
+.footer-bottom {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+/* ปรับแต่งให้ดูดีในมือถือ */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-contact p {
+        justify-content: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+
+#mobile-menu li {
+    list-style: none !important;
+}
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -29,40 +187,54 @@
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
         <div class="flex items-center space-x-2">
-            <div class="w-10 h-10 bg-[#4FA3D1] rounded flex items-center justify-center font-bold text-xl">S</div>
+            <img src="STD.jpg" alt="Logo" class="h-12 w-auto">
             <div class="leading-none">
-                <span class="text-xl font-bold tracking-tighter block">STD ENGINEERING</span>
-                <span class="text-[10px] text-[#4FA3D1] tracking-[0.2em] uppercase">And Construction</span>
+                <span class="text-xl font-bold tracking-tighter block">ENGINEERING AND</span>
+                <span class="text-[10px] text-[#4FA3D1] tracking-[0.2em] uppercase">CONSTRUCTION CO.,LTD.</span>
             </div>
         </div>
 
-        <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
-            <a href="index.html" class="hover:text-[#4FA3D1] transition">หน้าแรก</a>
-                <a href="about us.html" class="hover:text-[#4FA3D1] transition">เกี่ยวกับเรา</a>
-                <div class="relative group">
-                <button class="flex items-center hover:text-[#4FA3D1] transition py-2">บริการ
-                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                </button>
-                
-                <div class="absolute left-0 mt-0 w-56 bg-white rounded-xl shadow-2xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:mt-2 transition-all duration-300">
-                    <a href="services.html#ndt" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานตรวจสอบ NDT</a>
-                    <a href="services.html#gas" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานก๊าซธรรมชาติ</a>
-                    <a href="services.html#lpg" class="block px-6 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#4FA3D1]">งานก๊าซ LPG</a>
-                    <hr class="my-1 border-gray-100">
-                    <a href="services.html" class="block px-6 py-2 text-[#4FA3D1] font-bold text-xs uppercase">ดูบริการทั้งหมด</a>
-                </div>
-            </div>
-                <a href="article.html" class="hover:text-[#4FA3D1] transition">บทความ</a>
-				<a href="projects0.html" class="hover:text-[#4FA3D1] transition">ผลงาน</a>
-				<a href="contact.html" class="hover:text-[#4FA3D1] transition">ติดต่อเรา</a>
-            <a href="quotation.html" class="bg-[#4FA3D1] px-5 py-2 rounded-full hover:bg-white hover:text-[#0A1F33] transition shadow-lg">ขอใบเสนอราคา</a>
-        
-<div class="hidden md:flex items-center space-x-2 text-sm font-bold ml-4 border-l border-gray-600 pl-4">
-    <button onclick="changeLang('th')" id="btn-th" class="px-2 py-1 rounded transition-all duration-300 text-[#4FA3D1] border border-[#4FA3D1]">TH</button>
-    <span class="text-gray-500">|</span>
-    <button onclick="changeLang('en')" id="btn-en" class="px-2 py-1 rounded transition-all duration-300 text-gray-400 hover:text-white">EN</button>
+<div class="hidden md:flex space-x-8 items-center text-sm font-medium">
+    <a href="index.html" class="hover:text-[#4FA3D1] transition">
+        <span class="lang-th">หน้าแรก</span><span class="lang-en hidden">Home</span>
+    </a>
+    <a href="about us.html" class="hover:text-[#4FA3D1] transition">
+        <span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en hidden">About Us</span>
+    </a>
+    
+    <div class="nav-item group">
+        <a href="services.html" class="nav-link flex items-center hover:text-[#4FA3D1] transition">
+            <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
+            <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+        </a>
+        <div class="dropdown">
+            <a href="ngv.html"><i class="fas fa-gas-pump mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบก๊าซธรรมชาติ (CNG/NGV)</span><span class="lang-en hidden">NGV/CNG Inspection</span></a>
+            <a href="#"><i class="fas fa-fire mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบก๊าซหุงต้ม (LPG)</span><span class="lang-en hidden">LPG Inspection</span></a>
+            <a href="#"><i class="fas fa-oil-can mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบคลังน้ำมันเชื้อเพลิง</span><span class="lang-en hidden">Fuel Terminal Inspection</span></a>
+            <a href="#"><i class="fas fa-pencil-ruler mr-2 text-[#4FA3D1]"></i> <span class="lang-th">เขียนแบบและรายการคำนวณ</span><span class="lang-en hidden">Engineering Design</span></a>
+            <a href="ndt.html"><i class="fas fa-search mr-2 text-[#4FA3D1]"></i> <span class="lang-th">งานตรวจสอบ NDT</span><span class="lang-en hidden">NDT Services</span></a>
+        </div>
+    </div>
+
+    <a href="article.html" class="hover:text-[#4FA3D1] transition">
+        <span class="lang-th">บทความ</span><span class="lang-en hidden">Articles</span>
+    </a>
+    <a href="projects0.html" class="hover:text-[#4FA3D1] transition">
+        <span class="lang-th">ผลงาน</span><span class="lang-en hidden">Projects</span>
+    </a>
+    <a href="contact.html" class="hover:text-[#4FA3D1] transition">
+        <span class="lang-th">ติดต่อเรา</span><span class="lang-en hidden">Contact</span>
+    </a>
+    <a href="quotation.html" class="bg-[#4FA3D1] px-5 py-2 rounded-full hover:bg-white hover:text-[#0A1F33] transition shadow-lg">
+        <span class="lang-th">ขอใบเสนอราคา</span><span class="lang-en hidden">Get Quote</span>
+    </a>
+
+    <div class="hidden md:flex items-center space-x-2 text-sm font-bold ml-4 border-l border-gray-600 pl-4">
+      <button onclick="changeLang('th')" id="btn-th" class="px-2 py-1 rounded transition-all duration-300 text-[#4FA3D1] border border-[#4FA3D1]">TH</button>
+      <span class="text-gray-500">|</span>
+      <button onclick="changeLang('en')" id="btn-en" class="px-2 py-1 rounded transition-all duration-300 text-gray-400 hover:text-white">EN</button>
+    </div>
 </div>
-		 </div>
 		 
 
         <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
@@ -72,18 +244,58 @@
         </button>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-[#0A1F33] border-t border-white/10 px-6 py-6 space-y-4">
-        <a href="index.html" class="block text-lg hover:text-[#4FA3D1]">หน้าแรก</a>
-        <a href="about us.html" class="block text-lg hover:text-[#4FA3D1]">เกี่ยวกับเรา</a>
-        <a href="services.html" class="block text-lg hover:text-[#4FA3D1]">บริการ</a>
-        <a href="article.html" class="block text-lg hover:text-[#4FA3D1]">บทความ</a>
-		<a href="projects0.html" class="block text-lg hover:text-[#4FA3D1]">ผลงาน</a>
-        <a href="contact.html" class="block text-lg hover:text-[#4FA3D1]">ติดต่อเรา</a>
-		<a href="quotation.html" class="block text-lg text-[#4FA3D1] font-bold">ขอใบเสนอราคา</a>
-		<div class="flex items-center space-x-2"> <div class="flex md:hidden items-center bg-gray-800/50 rounded-lg p-1 border border-gray-700">
-        <button onclick="changeLang('th')" id="btn-th-mobile" class="px-2 py-1 text-[10px] font-bold rounded transition-all duration-300 text-[#4FA3D1] bg-gray-700 shadow-sm">TH</button>
-        <button onclick="changeLang('en')" id="btn-en-mobile" class="px-2 py-1 text-[10px] font-bold rounded transition-all duration-300 text-gray-400">EN</button>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0A1F33] border-t border-white/10 px-6 py-8 space-y-6">
+    <a href="index.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">หน้าแรก</span>
+        <span class="lang-en hidden">Home</span>
+    </a>
+
+    <a href="about us.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">เกี่ยวกับเรา</span>
+        <span class="lang-en hidden">About Us</span>
+    </a>
+
+    <li class="nav-item">
+	    <a href="services.html" class="block text-lg hover:text-[#4FA3D1] transition">
+            <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
+            <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+        </a>
+        <div class="dropdown">
+            <a href="ngv.html"><i class="fas fa-gas-pump mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบก๊าซธรรมชาติ (CNG/NGV)</span><span class="lang-en hidden">NGV/CNG Inspection</span></a>
+            <a href="#"><i class="fas fa-fire mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบก๊าซหุงต้ม (LPG)</span><span class="lang-en hidden">LPG Inspection</span></a>
+            <a href="#"><i class="fas fa-oil-can mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบคลังน้ำมันเชื้อเพลิง</span><span class="lang-en hidden">Fuel Terminal Inspection</span></a>
+            <a href="#"><i class="fas fa-pencil-ruler mr-2 text-[#4FA3D1]"></i> <span class="lang-th">เขียนแบบและรายการคำนวณ</span><span class="lang-en hidden">Engineering Design</span></a>
+            <a href="ndt.html"><i class="fas fa-search mr-2 text-[#4FA3D1]"></i> <span class="lang-th">งานตรวจสอบ NDT</span><span class="lang-en hidden">NDT Services</span></a>
+        </div>
+    </li>
+
+    <a href="article.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">บทความ</span>
+        <span class="lang-en hidden">Articles</span>
+    </a>
+
+    <a href="projects0.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">ผลงาน</span>
+        <span class="lang-en hidden">Projects</span>
+    </a>
+
+    <a href="contact.html" class="block text-lg hover:text-[#4FA3D1] transition">
+        <span class="lang-th">ติดต่อเรา</span>
+        <span class="lang-en hidden">Contact Us</span>
+    </a>
+
+    <a href="quotation.html" class="block text-center bg-[#4FA3D1] text-white py-3 rounded-xl font-bold shadow-lg">
+        <span class="lang-th">ขอใบเสนอราคา</span>
+        <span class="lang-en hidden">Request a Quotation</span>
+    </a>
+
+    <div class="flex items-center justify-center pt-4">
+        <div class="flex items-center bg-gray-800/80 rounded-full p-1 border border-gray-700 w-32 justify-between">
+            <button onclick="changeLang('th')" id="btn-th-mobile" class="flex-1 py-1.5 text-xs font-bold rounded-full transition-all duration-300 text-[#4FA3D1] bg-gray-700 shadow-sm">TH</button>
+            <button onclick="changeLang('en')" id="btn-en-mobile" class="flex-1 py-1.5 text-xs font-bold rounded-full transition-all duration-300 text-gray-400">EN</button>
+        </div>
     </div>
+</div>
     </div>
 </nav>
 	
@@ -110,7 +322,8 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-[#0A1F33]">ที่อยู่สำนักงาน</h4>
-                        <p class="text-gray-600">บริษัท เอสทีดี เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (สำนักงานใหญ่)<br>เลขประจำตัวผู้เสียภาษี: 0123456789XXX</p>
+                        <p class="text-gray-600">บริษัท เอสทีดี เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (สำนักงานใหญ่)<br>121/30 หมูที่ 3 ตําบลพลูตาหลวง อําเภอสัตหีบ จังหวัดชลบุรี 12000
+						<br>เลขประจําตัวผูเสียภาษี 0205563021406</p>
                     </div>
                 </div>
 
@@ -123,7 +336,7 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-[#0A1F33]">โทรศัพท์</h4>
-                        <p class="text-gray-600">02-XXX-XXXX, 08X-XXX-XXXX</p>
+                        <p class="text-gray-600">083-8135601</p>
                     </div>
                 </div>
 
@@ -135,7 +348,7 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-[#0A1F33]">อีเมล</h4>
-                        <p class="text-gray-600">contact@std-engineering.co.th</p>
+                        <p class="text-gray-600">Acc@stdengineering-th.com <br>Info@stdengineering-th.com <br>Eng@stdengineering-th.com</p>
                     </div>
                 </div>
             </div>
@@ -174,17 +387,17 @@
     
     <div class="flex flex-col items-end space-y-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-10 group-hover:translate-y-0">
         
-        <a href="https://line.me/ti/p/@yourid" target="_blank" class="flex items-center space-x-2 bg-[#06C755] text-white p-3 rounded-full shadow-lg hover:scale-110 transition transform">
+        <a href="https://www.line.me/th/" target="_blank" class="flex items-center space-x-2 bg-[#06C755] text-white p-3 rounded-full shadow-lg hover:scale-110 transition transform">
             <span class="text-xs font-bold pr-1 px-2">Line Official</span>
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.185 1.039.646 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.893 2.572-5.991z"/></svg>
         </a>
 
-        <a href="https://facebook.com/yourpage" target="_blank" class="flex items-center space-x-2 bg-[#1877F2] text-white p-3 rounded-full shadow-lg hover:scale-110 transition transform">
+        <a href="https://facebook.com" target="_blank" class="flex items-center space-x-2 bg-[#1877F2] text-white p-3 rounded-full shadow-lg hover:scale-110 transition transform">
             <span class="text-xs font-bold pr-1 px-2">Messenger</span>
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.915 1.45 5.518 3.715 7.234V22l4.437-2.435c.616.17 1.266.262 1.848.262 5.523 0 10-4.145 10-9.258C22 6.145 17.523 2 12 2z"/></svg>
         </a>
 
-        <a href="tel:08XXXXXXXX" class="flex items-center space-x-2 bg-[#4FA3D1] text-white p-3 rounded-full shadow-lg hover:scale-110 transition transform">
+        <a href="tel:083-813-5601" class="flex items-center space-x-2 bg-[#4FA3D1] text-white p-3 rounded-full shadow-lg hover:scale-110 transition transform">
             <span class="text-xs font-bold pr-1 px-2">โทรสายด่วน</span>
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
         </a>
@@ -206,9 +419,69 @@
     });
 </script>
 
-<footer class="bg-[#0A1F33] text-gray-400 py-10 text-center text-sm border-t border-white/5">
-        &copy; 2026 STD Engineering & Construction Co., Ltd. All Rights Reserved.
-    </footer>
+ <footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2><span class="lang-th">บริษัท เอสทีดี เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จํากัด</span>
+			<span class="lang-en hidden"><h2>STD </span><span class="lang-en hidden">Engineering & Construction Co., Ltd.</span></h2></h2>
+            <p>
+                <span class="lang-th">ผู้นำด้านการตรวจสอบทางวิศวกรรม  และระบบก๊าซธรรมชาติ ด้วยมาตรฐานสากลและทีมวิศวกรผู้เชี่ยวชาญ เพื่อความปลอดภัยและประสิทธิภาพสูงสุดของธุรกิจคุณ</span>
+                <span class="lang-en hidden">Leading provider of engineering inspection and gas systems. With international standards and expert engineers for your business safety and efficiency.</span>
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>
+                <span class="lang-th">เมนูแนะนำ</span>
+                <span class="lang-en hidden">Quick Links</span>
+            </h3>
+            <ul>
+                <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en hidden">Home</span></a></li>
+                <li><a href="about.html"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en hidden">About Us</span></a></li>
+                <li><a href="services.html"><span class="lang-th">บริการของเรา</span><span class="lang-en hidden">Our Services</span></a></li>
+                <li><a href="ndt.html"><span class="lang-th">งาน NDT</span><span class="lang-en hidden">NDT Services</span></a></li>
+                <li><a href="article.html"><span class="lang-th">บทความ</span><span class="lang-en hidden">Articles</span></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h3>
+                <span class="lang-th">บริการ</span>
+                <span class="lang-en hidden">Services</span>
+            </h3>
+            <ul>
+                <li><a href="#"><span class="lang-th">ตรวจสอบก๊าซ NGV/LPG</span><span class="lang-en hidden">NGV/LPG Inspection</span></a></li>
+                <li><a href="#"><span class="lang-th">ตรวจสอบคลังน้ำมัน</span><span class="lang-en hidden">Fuel Terminal Inspection</span></a></li>
+                <li><a href="#"><span class="lang-th">งานเขียนแบบคำนวณ</span><span class="lang-en hidden">Engineering Design</span></a></li>
+                <li><a href="#"><span class="lang-th">ตรวจสอบรับรองความปลอดภัย</span><span class="lang-en hidden">Safety Certification</span></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>
+                <span class="lang-th">ติดต่อเรา</span>
+                <span class="lang-en hidden">Contact Us</span>
+            </h3>
+            <p><i class="fas fa-map-marker-alt"></i> 
+                <span class="lang-th">121/30 หมูที่ 3 ตําบลพลูตาหลวง อําเภอสัตหีบ จังหวัดชลบุรี 12000</span>
+                <span class="lang-en hidden">121/30 Moo 3, Phlu Ta Luang Sub-district, Sattahip District, Chon Buri 12000</span>
+            </p>
+            <p><i class="fas fa-phone-alt"></i> 083-8135601</p>
+            <p><i class="fas fa-envelope"></i> Acc@stdengineering-th.com</br>
+			Info@stdengineering-th.com</br>
+			Eng@stdengineering-th.com</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 STD Engineering & Construction Co., Ltd. All Rights Reserved.</p>
+    </div>
+</footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
