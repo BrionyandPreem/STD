@@ -322,8 +322,8 @@ footer h3 {
                     </div>
                     <div>
                         <h4 class="font-bold text-[#0A1F33]">ที่อยู่สำนักงาน</h4>
-                        <p class="text-gray-600">บริษัท เอสทีดี เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (สำนักงานใหญ่)<br>121/30 หมูที่ 3 ตําบลพลูตาหลวง อําเภอสัตหีบ จังหวัดชลบุรี 12000
-						<br>เลขประจําตัวผูเสียภาษี 0205563021406</p>
+                        <p class="text-gray-600">บริษัท เอสทีดี เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จำกัด (สำนักงานใหญ่)<br>111/173 หมู่ที่ 12 ตำบลบางคูวัด อำเภอเมืองปทุมธานี จ.ปทุมธานี 12000
+						<br>เลขประจําตัวผูเสียภาษี  0205563021406</p>
                     </div>
                 </div>
 
@@ -336,7 +336,7 @@ footer h3 {
                     </div>
                     <div>
                         <h4 class="font-bold text-[#0A1F33]">โทรศัพท์</h4>
-                        <p class="text-gray-600">083-8135601</p>
+                        <p class="text-gray-600">083-8135601   (คุณสุธิดา อุทัยรัตน์) </p>
                     </div>
                 </div>
 
@@ -377,10 +377,9 @@ footer h3 {
 </section>
 
 <div class="w-full h-96 filter grayscale contrast-125" data-aos="zoom-in">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.2536416625!2d100.63105727586522!3d13.76922179633
-	3903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d61f96f87957b%3A0xd650b35b74fe4049!2z4Lia4Lij4Li04Lip4Lix4Li
-	XIE7guYDguK3guKrguIguIOC5gOC4reC5hOC4hOC4mOC4meC5geC4meC4reC4o-C4teC5iCDguYHguKvguJnguYfguITguITguK3guLHguIrguIrguLHguYj
-	guJkg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sth!2sth!4v1715840000000!5m2!1sth!2sth" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d342.25152799711424!2d100.49066786481373!3d13.950624667958564!2m3!1f0!2f0!3f0!
+	3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDU3JzAyLjQiTiAxMDDCsDI5JzI2LjgiRQ!5e0!3m2!1sth!2sth!4v1771931997147!5m2!1sth!2sth" 
+    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 
 <div class="fixed bottom-6 right-6 z-[9999] flex flex-col items-end space-y-4 group">
@@ -463,8 +462,8 @@ footer h3 {
                 <span class="lang-en hidden">Contact Us</span>
             </h3>
             <p><i class="fas fa-map-marker-alt"></i> 
-                <span class="lang-th">121/30 หมูที่ 3 ตําบลพลูตาหลวง อําเภอสัตหีบ จังหวัดชลบุรี 12000</span>
-                <span class="lang-en hidden">121/30 Moo 3, Phlu Ta Luang Sub-district, Sattahip District, Chon Buri 12000</span>
+                <span class="lang-th">111/173 หมู่ที่ 12 ตำบลบางคูวัด อำเภอเมืองปทุมธานี จ.ปทุมธานี 12000</span>
+                <span class="lang-en hidden">111/173 Moo 12, Bang Khu Wat, Mueang Pathum Thani, Pathum Thani 12000, Thailand</span>
             </p>
             <p><i class="fas fa-phone-alt"></i> 083-8135601</p>
             <p><i class="fas fa-envelope"></i> Acc@stdengineering-th.com</br>
@@ -479,7 +478,7 @@ footer h3 {
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 STD Engineering & Construction Co., Ltd. All Rights Reserved.</p>
+        <p>&copy; 2026 STD Engineering & Construction Co.,Ltd. All Rights Reserved.</p>
     </div>
 </footer>
 
@@ -488,31 +487,51 @@ footer h3 {
         AOS.init({ once: true });
     </script>
 	
+	<script>
+function toggleMobileDropdown() {
+    const list = document.getElementById('mobile-services-list');
+    const arrow = document.getElementById('arrow-icon');
+    
+    list.classList.toggle('hidden');
+    
+    arrow.classList.toggle('rotate-180');
+}
+</script>
+	
 <script>
 function changeLang(lang) {
     const thElements = document.querySelectorAll('.lang-th');
     const enElements = document.querySelectorAll('.lang-en');
 
-    if (lang === 'en') {
-        thElements.forEach(el => el.classList.add('hidden'));
-        enElements.forEach(el => el.classList.remove('hidden'));
-    } else {
-        enElements.forEach(el => el.classList.add('hidden'));
-        thElements.forEach(el => el.classList.remove('hidden'));
-    }
-
     const allThBtns = [document.getElementById('btn-th'), document.getElementById('btn-th-mobile')];
     const allEnBtns = [document.getElementById('btn-en'), document.getElementById('btn-en-mobile')];
 
     if (lang === 'en') {
+        thElements.forEach(el => el.classList.add('hidden'));
+        enElements.forEach(el => el.classList.remove('hidden'));
+        localStorage.setItem('selectedLang', 'en');
+
         allEnBtns.forEach(btn => btn?.classList.add('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
         allThBtns.forEach(btn => btn?.classList.remove('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
     } else {
+        thElements.forEach(el => el.classList.remove('hidden'));
+        enElements.forEach(el => el.classList.add('hidden'));
+        localStorage.setItem('selectedLang', 'th');
+
         allThBtns.forEach(btn => btn?.classList.add('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
         allEnBtns.forEach(btn => btn?.classList.remove('text-[#4FA3D1]', 'border', 'border-[#4FA3D1]'));
     }
 }
-</script>	
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('selectedLang');
+    if (savedLang) {
+        changeLang(savedLang);
+    } else {
+        changeLang('th');
+    }
+});
+</script>
 	
 </body>
 </html>
