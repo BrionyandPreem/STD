@@ -165,6 +165,74 @@ footer h3 {
 #mobile-menu li {
     list-style: none !important;
 }
+
+/* 1. หัวข้อกลุ่มในเมนูย่อย - ปรับให้ตัวเล็กลงและดูโปร่งขึ้น */
+.sub-header {
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    color: #2DD4BF; /* สีเขียว Teal ละมุนๆ */
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: rgba(45, 212, 191, 0.05); /* พื้นหลังจางๆ ให้ดูมีเลเยอร์ */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 2. เมนูย่อยที่กางออกมา - ปรับให้เป็นกระจกฝ้าโค้งมน */
+.sub-dropdown {
+    position: absolute;
+    left: 100%; 
+    top: 0;
+    background: rgba(15, 23, 42, 0.9); /* สีน้ำเงินเข้มแบบโปร่งแสง */
+    backdrop-filter: blur(12px); /* เอฟเฟกต์กระจกฝ้า ทำให้ดูนุ่มนวล */
+    min-width: 260px;
+    border-radius: 15px; /* เพิ่มความโค้งมนให้ดูละมุนขึ้น */
+    border: 1px solid rgba(45, 212, 191, 0.2); /* ขอบจางๆ ไม่แข็ง */
+    display: none;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    overflow: hidden; /* เพื่อให้พื้นหลัง sub-header ไม่ทะลุขอบโค้ง */
+    margin-left: 5px; /* เว้นระยะห่างจากเมนูหลักนิดหน่อย */
+}
+
+/* 3. รายการข้างในเมนูย่อย */
+.sub-dropdown a {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.sub-dropdown a:hover {
+    background: rgba(45, 212, 191, 0.1);
+    color: #2DD4BF;
+    padding-left: 22px; /* เพิ่มลูกเล่นขยับนิดๆ เวลาเอาเมาส์ชี้ */
+}
+
+/* 4. รายการหลักที่มีเมนูย่อย */
+.sub-menu {
+    position: relative;
+}
+
+.sub-menu:hover .sub-dropdown {
+    display: block;
+    animation: fadeIn 0.2s ease-out; /* เพิ่มแอนิเมชันตอนปรากฏ */
+}
+
+/* 5. ลูกศรขวา - ปรับให้จางลงไม่แย่งสายตา */
+.float-right {
+    float: right;
+    font-size: 0.65rem;
+    opacity: 0.5;
+    margin-top: 4px;
+}
+
+/* แอนิเมชันตอนเปิดเมนู */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(5px); }
+    to { opacity: 1; transform: translateX(0); }
+}
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -200,14 +268,48 @@ footer h3 {
             <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
             <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
         </a>
-        <div class="dropdown">
-            <a href="ngv.html"><i class="fas fa-gas-pump mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบก๊าซธรรมชาติ (CNG/NGV)</span><span class="lang-en hidden">NGV/CNG Inspection</span></a>
-            <a href="#"><i class="fas fa-fire mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบก๊าซหุงต้ม (LPG)</span><span class="lang-en hidden">LPG Inspection</span></a>
-            <a href="#"><i class="fas fa-oil-can mr-2 text-[#4FA3D1]"></i> <span class="lang-th">ตรวจสอบคลังน้ำมันเชื้อเพลิง</span><span class="lang-en hidden">Fuel Terminal Inspection</span></a>
-            <a href="#"><i class="fas fa-pencil-ruler mr-2 text-[#4FA3D1]"></i> <span class="lang-th">เขียนแบบและรายการคำนวณ</span><span class="lang-en hidden">Engineering Design</span></a>
-            <a href="ndt.html"><i class="fas fa-search mr-2 text-[#4FA3D1]"></i> <span class="lang-th">งานตรวจสอบ NDT</span><span class="lang-en hidden">NDT Services</span></a>
+		
+ <div class="dropdown">
+    <div class="dropdown-item sub-menu">
+        <a href="#"><i class="fas fa-fire"></i> ก๊าซปิโตรเลียมเหลว (LPG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
+        <div class="sub-dropdown">
+            <div class="sub-header">สถานที่ใช้ LPG / โรงบรรจุ / คลังก๊าซ</div>
+            <a href="#">งานทดสอบประจำปี</a>
+            <a href="#">งานทดสอบครบวาระ 5 ปี</a>
+            <div class="sub-header">รถขนส่งก๊าซ LPG</div>
+            <a href="#">งานทดสอบประจำปี / ครบวาระ</a>
         </div>
     </div>
+
+    <div class="dropdown-item sub-menu">
+        <a href="#"><i class="fas fa-gas-pump"></i> ก๊าซธรรมชาติ (NGV/NG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
+        <div class="sub-dropdown">
+            <div class="sub-header">สถานที่ใช้ / รถขนส่ง / สถานีบริการ</div>
+            <a href="#">งานทดสอบประจำปี</a>
+            <a href="#">งานทดสอบครบวาระ 3 ปี</a>
+            <a href="#">งานทดสอบครบวาระ 5 ปี</a>
+            <a href="#">งานทดสอบครบวาระ 10 ปี (สถานี/รถ)</a>
+        </div>
+    </div>
+
+    <div class="dropdown-item sub-menu">
+        <a href="#"><i class="fas fa-oil-can"></i> น้ำมันเชื้อเพลิง (OIL) <i class="fas fa-chevron-right float-right mt-1"></i></a>
+        <div class="sub-dropdown">
+            <div class="sub-header">สถานที่เก็บ / สถานีบริการ</div>
+            <a href="#">งานทดสอบประจำปี</a>
+            <a href="#">งานทดสอบครบวาระ 10 ปี</a>
+            <div class="sub-header">คลังน้ำมัน</div>
+            <a href="#">งานทดสอบประจำปี / ครบวาระ 15 ปี</a>
+            <div class="sub-header">รถขนส่งน้ำมัน</div>
+            <a href="#">งานทดสอบระบบ VRU</a>
+            <a href="#">งานทดสอบครบวาระ 6 ปี</a>
+        </div>
+    </div>
+
+    <a href="#" class="dropdown-item"><i class="fas fa-pencil-ruler"></i> เขียนแบบและรายการคำนวณ</a>
+    <a href="ndt.html" class="dropdown-item"><i class="fas fa-search"></i> งานตรวจสอบแบบไม่ทำลาย</a>
+</div>
+</div>
 
     <a href="article.html" class="hover:text-[#4FA3D1] transition">
         <span class="lang-th">บทความ</span><span class="lang-en hidden">Articles</span>
