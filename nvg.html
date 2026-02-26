@@ -9,7 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <style>
-        body { font-family: 'Prompt', sans-serif; }
+           body { font-family: 'Prompt', sans-serif; }
         .hero-gradient {
             background: linear-gradient(rgba(10, 31, 51, 0.8), rgba(10, 31, 51, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80');
             background-size: cover;
@@ -49,7 +49,7 @@
 
 
         footer {
-    background: linear-gradient(180deg, #0A1F33 0%, #162C46 100%); 
+    background: linear-gradient(180deg, #0A1F33 0%, #162C46 100%);
     color: #ffffff;
     padding: 80px 0 30px;
     font-family: 'Prompt', sans-serif;
@@ -149,6 +149,23 @@ footer h3 {
     font-size: 0.85rem;
 }
 
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-contact p {
+        justify-content: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+
+#mobile-menu li {
+    list-style: none !important;
+}
+
 .sub-header {
     padding: 10px 15px;
     font-size: 0.75rem;
@@ -211,134 +228,8 @@ footer h3 {
     to { opacity: 1; transform: translateX(0); }
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .footer-contact p {
-        justify-content: center;
-    }
-    .social-links {
-        justify-content: center;
-    }
-}
-
-#mobile-menu li {
-    list-style: none !important;
-}
-  
-.service-card-image {
-    position: relative;
-    height: 450px;
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    box-shadow: 0 10px 30px rgba(30, 41, 59, 0.15);
-}
-
-.card-bg {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.6s ease;
-}
-
-.service-card-image:hover .card-bg {
-    transform: scale(1.1);
-}
-
-.card-content {
-    position: relative;
-    width: 100%;
-    padding: 30px;
-    background: linear-gradient(to top, #1e293b 40%, rgba(30, 41, 59, 0.7) 100%);
-    color: white;
-}
-
-.icon-tag {
-    width: 45px; height: 45px;
-    background: #3b82f6;
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    margin-bottom: 15px;
-}
-
-.service-card-image h3 {
-    font-size: 1.4rem; font-weight: 700; margin-bottom: 15px;
-    color: #fff !important;
-}
-
-.detail-list {
-    list-style: none; padding: 0; margin-bottom: 25px;
-}
-
-.detail-list li {
-    font-size: 0.85rem; margin-bottom: 8px; opacity: 0.9;
-    display: flex; align-items: center; gap: 8px;
-}
-
-.detail-list li::before {
-    content: "•"; color: #3b82f6; font-weight: bold;
-}
-
-.btn-outline-white {
-    display: inline-block;
-    padding: 8px 20px;
-    border: 1px solid rgba(255,255,255,0.3);
-    border-radius: 8px;
-    color: white; text-decoration: none;
-    font-size: 0.85rem; transition: 0.3s;
-}
-
-.btn-outline-white:hover {
-    background: white; color: #1e293b;
-}
-
-/* Card ย่อย (เขียนแบบ/NDT) */
-.sub-card-image {
-    position: relative; height: 100px;
-    border-radius: 15px; overflow: hidden;
-    border: 1px solid #e2e8f0;
-}
-
-.sub-card-bg {
-    position: absolute; width: 100%; height: 100%;
-    background-size: cover; background-position: center;
-    opacity: 0.1;
-}
-
-.sub-card-overlay {
-    position: relative; width: 100%; height: 100%;
-    padding: 0 25px; display: flex;
-    justify-content: space-between; align-items: center;
-    background: white;
-}
-
-.sub-card-image:hover {
-    border-color: #3b82f6;
-}
-
-.sub-card-image h4 {
-    color: #1e293b; font-weight: 600; font-size: 1rem;
-}
-
-.arrow-btn {
-    width: 35px; height: 35px;
-    background: #f1f5f9; color: #1e293b;
-    border-radius: 50%; display: flex;
-    align-items: center; justify-content: center; transition: 0.3s;
-}
-
-.sub-card-image:hover .arrow-btn {
-    background: #1e293b; color: white;
-}
-
     </style>
 </head>
-
 <body class="bg-gray-50 text-gray-800">
 
 <script>
@@ -347,7 +238,7 @@ footer h3 {
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
     </button>
-</script><nav class="bg-[#0A1F33] text-white py-4 sticky top-0 z-[1000] shadow-xl">
+</script><nav class="bg-[#14183d] text-white py-4 sticky top-0 z-[1000] shadow-xl">
 
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
@@ -386,7 +277,7 @@ footer h3 {
     </div>
 
     <div class="dropdown-item sub-menu">
-        <a href="#"><i class="fas fa-gas-pump"></i> ก๊าซธรรมชาติ (NGV/NG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
+        <a href="ngv.html"><i class="fas fa-gas-pump"></i> ก๊าซธรรมชาติ (NGV/NG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
         <div class="sub-dropdown">
             <div class="sub-header">สถานที่ใช้ / รถขนส่ง / สถานีบริการ</div>
             <a href="#">งานทดสอบประจำปี</a>
@@ -397,7 +288,7 @@ footer h3 {
     </div>
 
     <div class="dropdown-item sub-menu">
-        <a href="#"><i class="fas fa-oil-can"></i> น้ำมันเชื้อเพลิง (OIL) <i class="fas fa-chevron-right float-right mt-1"></i></a>
+        <a href="oil.html"><i class="fas fa-oil-can"></i> น้ำมันเชื้อเพลิง (OIL) <i class="fas fa-chevron-right float-right mt-1"></i></a>
         <div class="sub-dropdown">
             <div class="sub-header">สถานที่เก็บ / สถานีบริการ</div>
             <a href="#">งานทดสอบประจำปี</a>
@@ -410,7 +301,7 @@ footer h3 {
         </div>
     </div>
 
-    <a href="#" class="dropdown-item"><i class="fas fa-pencil-ruler"></i> เขียนแบบและรายการคำนวณ</a>
+    <a href="write.html" class="dropdown-item"><i class="fas fa-pencil-ruler"></i> เขียนแบบและรายการคำนวณ</a>
     <a href="ndt.html" class="dropdown-item"><i class="fas fa-search"></i> งานตรวจสอบแบบไม่ทำลาย</a>
 </div>
 </div>
@@ -497,80 +388,167 @@ footer h3 {
 </div>
     </div>
 </nav>
-	
-	
-<section class="services-modern py-20 px-6 font-['Prompt'] bg-[#f8fafc]">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <h1 class="text-3xl font-bold text-[#1e293b] mb-4">บริการตรวจสอบและรับรองทางวิศวกรรม</h1>
-            <p class="text-gray-500">มาตรฐานความปลอดภัยตามกฎหมายกรมธุรกิจพลังงาน และกรมโรงงานอุตสาหกรรม</p>
-            <div class="w-20 h-1 bg-[#3b82f6] mx-auto mt-6"></div>
+
+<section class="lpg-inspection-page py-16 bg-[#F8FAFC] font-['Prompt']">
+    <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="bg-[#1E293B] rounded-3xl p-8 mb-12 shadow-2xl relative overflow-hidden border-b-4 border-[#3B82F6]">
+            <div class="relative z-10">
+                <div class="flex items-center gap-3 mb-4">
+                    <h2 class="text-2xl font-bold text-white">ก๊าซปิโตรเลียมเหลว (Liquefied Petroleum Gas: LPG)</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="text-gray-300 text-sm leading-relaxed">
+                        <p class="mb-4">คือก๊าซเชื้อเพลิงที่ได้จากการกลั่นน้ำมันดิบและการแยกก๊าซธรรมชาติ มีองค์ประกอบหลักคือโพรเพนและบิวเทน สามารถอัดให้เป็นของเหลวภายใต้ความดันเพื่อความสะดวกในการเก็บในถังแรงดันขนาดใหญ่ และเมื่อใช้งานจะลดความดัน
+						ให้ระเหยกลับเป็นก๊าซเพื่อจ่ายเข้าสู่ระบบท่อภายในอาคารหรือโรงงาน LPG ให้ค่าความร้อนสูง เผาไหม้สะอาด ควบคุมเปลวไฟได้ดี จึงเหมาะสำหรับงานครัวเชิงพาณิชย์ในโรงแรม งานซักอบรีด ระบบหม้อไอน้ำ เตาเผา และกระบวนการผลิตต่าง ๆ ในโรงงาน
+						อุตสาหกรรม อย่างไรก็ตาม เนื่องจากเป็นก๊าซที่ติดไฟง่ายและหนักกว่าอากาศ หากรั่วไหลจะสะสมในพื้นที่ต่ำ จึงต้องออกแบบ ติดตั้ง และตรวจสอบระบบถังเก็บ ท่อ วาล์ว และอุปกรณ์ความปลอดภัยตามมาตรฐานวิศวกรรมอย่างเคร่งครัด เพื่อให้การใช้งานมีประสิทธิภาพและปลอดภัยสูงสุด</p>
+                    </div>
+                    <div class="bg-red-500/10 border border-red-500/20 p-5 rounded-2xl">
+                        <h4 class="text-[#FB7185] font-bold mb-2 flex items-center gap-2">
+                            <i class="fas fa-exclamation-triangle"></i> กฎหมาย
+                        </h4>
+                        <p class="text-gray-300 text-xs leading-loose">
+                            หากไม่ตรวจระบบก๊าซธรรมชาติ (NG) ตามที่กฎหมายกำหนด อาจถูกปรับ สั่งระงับการใช้งาน หรือสั่งปิดกิจการ และหากเกิดอุบัติเหตุอาจมีความรับผิดทางกฎหมายเพิ่มเติม อีกทั้งเสี่ยงต่อการรั่วไหล ไฟไหม้ หรือระเบิด และประกันอาจไม่คุ้มครอง จึงควรตรวจตามรอบเพื่อความปลอดภัยและลดความเสี่ยงทางธุรกิจ
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
-            
-            <div class="service-card-image">
-                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800');"></div>
-                <div class="card-content">
-                    <div class="icon-tag"><i class="fas fa-fire"></i></div>
-                    <h3>ก๊าซปิโตรเลียมเหลว (LPG)</h3>
-                    <ul class="detail-list">
-                        <li>ตรวจสอบสถานที่ใช้ก๊าซประจำปี / 5 ปี</li>
-                        <li>ตรวจสอบโรงบรรจุและคลังก๊าซ</li>
-                        <li>ตรวจสอบรถขนส่งก๊าซทุกวาระ</li>
-                    </ul>
-                    <a href="LPG.html" class="btn-outline-white">ดูรายละเอียดงาน</a>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+            <div class="gallery-block">
+                <div class="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white mb-4">
+                    <img id="mainDisplay" src="lpg3.jpg" class="w-full h-[350px] object-cover transition-opacity duration-300">
+                </div>
+                <div class="flex gap-3 overflow-x-auto pb-2">
+                    <img src="lpg1.jpg" onclick="updatePreview(this.src)" class="thumb-node active">
+                    <img src="lpg2.jpg" onclick="updatePreview(this.src)" class="thumb-node">
+					<img src="lpg3.jpg" onclick="updatePreview(this.src)" class="thumb-node">
+                    <img src="lpg4.jpg" onclick="updatePreview(this.src)" class="thumb-node">
+   				   <img src="lpg5.jpg" onclick="updatePreview(this.src)" class="thumb-node">
                 </div>
             </div>
 
-            <div class="service-card-image">
-                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=800');"></div>
-                <div class="card-content">
-                    <div class="icon-tag"><i class="fas fa-gas-pump"></i></div>
-                    <h3>ก๊าซธรรมชาติ (NGV/NG)</h3>
-                    <ul class="detail-list">
-                        <li>ตรวจสอบสถานีบริการก๊าซธรรมชาติ</li>
-                        <li>สถานที่ใช้ก๊าซ (วาระ 3, 5 ปี)</li>
-                        <li>รถขนส่งก๊าซ (วาระ 3, 5, 10 ปี)</li>
-                    </ul>
-                    <a href="ngv.html" class="btn-outline-white">ดูรายละเอียดงาน</a>
-                </div>
-            </div>
-
-            <div class="service-card-image">
-                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1624354225023-e57597148560?auto=format&fit=crop&q=80&w=800');"></div>
-                <div class="card-content">
-                    <div class="icon-tag"><i class="fas fa-oil-can"></i></div>
-                    <h3>น้ำมันเชื้อเพลิง (OIL)</h3>
-                    <ul class="detail-list">
-                        <li>ตรวจสอบคลังและสถานีบริการน้ำมัน</li>
-                        <li>ตรวจสอบระบบควบคุมไอน้ำมัน (VRU)</li>
-                        <li>รถขนส่งน้ำมันวาระ 6 ปี</li>
-                    </ul>
-                    <a href="oil.html" class="btn-outline-white">ดูรายละเอียดงาน</a>
-                </div>
-            </div>
-
-            <div class="service-card-image">
-                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1624354225023-e57597148560?auto=format&fit=crop&q=80&w=800');"></div>
-                <div class="card-content">
-                    <div class="icon-tag"><i class="fas fa-pencil-ruler"></i></div>
-                    <h3>งานเขียนแบบและรายการคำนวณ</h3>
-                    <a href="write.html" class="btn-outline-white">ดูรายละเอียดงาน</a>
-                </div>
-            </div>
-
-            <div class="service-card-image">
-                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1624354225023-e57597148560?auto=format&fit=crop&q=80&w=800');"></div>
-                <div class="card-content">
-                    <div class="icon-tag"><i class="fas fa-search"></i></div>
-                    <h3>งานตรวจสอบโดยไม่ทำลาย</h3>
-                    <a href="ndt.html" class="btn-outline-white">ดูรายละเอียดงาน</a>
+            <div class="services-info">
+                <h3 class="text-2xl font-bold text-[#1E293B] mb-8 flex items-center gap-3">
+                    ขอบข่ายงานบริการตรวจสอบ LPG
+                </h3>
+                <div class="space-y-6">
+                    <div class="service-box">
+                        <h5>สถานที่ใช้ก๊าซปิโตรเลียมเหลว</h5>
+                        <ul class="text-sm space-y-1">
+                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจเพื่อต่ออายุประจำปี</li>
+                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจกรณีครบวาระ 5 ปี</li>
+                        </ul>
+                    </div>
+                    <div class="service-box">
+                        <h5>โรงบรรจุก๊าซปิโตรเลียมเหลว</h5>
+                        <ul class="text-sm space-y-1">
+                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจเพื่อต่ออายุประจำปี</li>
+                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจกรณีครบวาระ 5 ปี</li>
+                        </ul>
+                    </div>
+                    <div class="service-box">
+                        <h5>คลังก๊าซปิโตรเลียมเหลว</h5>
+                        <ul class="text-sm space-y-1">
+                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจเพื่อต่ออายุประจำปี</li>
+                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบกรณีครบวาระ 5 ปี</li>
+                        </ul>
+                    </div>
+                    <div class="service-box border-none">
+                        <h5>รถขนส่งก๊าซปิโตรเลียมเหลว</h5>
+                        <ul class="text-sm space-y-1">
+                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจเพื่อต่ออายุประจำปี</li>
+                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจกรณีครบวาระ (ตามกฎหมายกำหนด)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+.thumb-node {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.thumb-node:hover, .thumb-node.active {
+    opacity: 1;
+    border-color: #3B82F6;
+    transform: scale(1.05);
+}
+
+.service-box {
+    padding-left: 15px;
+    border-left: 3px solid #E2E8F0;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    border-left-color: #3B82F6;
+    padding-left: 20px;
+}
+
+.service-box h5 {
+    font-weight: 700;
+    color: #1E293B;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.service-box ul {
+    color: #64748B;
+}
+</style>
+
+<script>
+function updatePreview(source) {
+    const mainImg = document.getElementById('mainDisplay');
+    mainImg.src = source;
+    
+    // จัดการคลาส active
+    const thumbs = document.querySelectorAll('.thumb-node');
+    thumbs.forEach(t => t.classList.remove('active'));
+    event.target.classList.add('active');
+}
+</script>
+
+<div class="max-w-6xl mx-auto px-6 mb-20">
+    <div class="flex flex-col md:flex-row gap-4 justify-between border-t border-gray-200 pt-10">
+        
+        <a href="ndt.html" class="group flex items-center gap-4 p-4 rounded-2xl border border-gray-200 hover:border-[#3B82F6] hover:bg-white transition-all duration-300 md:w-1/2">
+            <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-[#3B82F6] group-hover:text-white transition-colors">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div>
+                <p class="text-xs text-gray-400 uppercase tracking-widest">ย้อนกลับ</p>
+                <h4 class="font-bold text-[#1E293B]">งานตรวจสอบแบบไม่ทำลาย</h4>
+            </div>
+        </a>
+
+        <a href="ngv.html" class="group flex items-center justify-between p-4 rounded-2xl border border-gray-200 hover:border-[#3B82F6] hover:bg-white transition-all duration-300 md:w-1/2 text-right">
+            <div class="ml-auto flex items-center gap-4">
+                <div>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest">หน้าถัดไป</p>
+                    <h4 class="font-bold text-[#1E293B]">ตรวจสอบก๊าซ NGV</h4>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-[#3B82F6] group-hover:text-white transition-colors">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</div>
 
 <div class="fixed bottom-6 right-6 z-[9999] flex flex-col items-end space-y-4 group">
     
@@ -608,11 +586,11 @@ footer h3 {
     });
 </script>
 
-<footer>
+ <footer>
     <div class="footer-container">
         <div class="footer-logo">
             <h2><span class="lang-th">บริษัท เอสทีดี เอ็นจิเนียริ่ง แอนด์ คอนสตรัคชั่น จํากัด</span>
-			<span class="lang-en hidden"><h2>STD </span><span class="lang-en hidden">Engineering & Construction Co., Ltd.</span></h2></h2>
+			<span class="lang-en hidden"><h2>STD </span><span class="lang-en hidden">Engineering & Construction Co.,Ltd.</span></h2></h2>
             <p>
                 <span class="lang-th">ผู้นำด้านการตรวจสอบทางวิศวกรรม  และระบบก๊าซธรรมชาติ ด้วยมาตรฐานสากลและทีมวิศวกรผู้เชี่ยวชาญ เพื่อความปลอดภัยและประสิทธิภาพสูงสุดของธุรกิจคุณ</span>
                 <span class="lang-en hidden">Leading provider of engineering inspection and gas systems. With international standards and expert engineers for your business safety and efficiency.</span>
@@ -723,6 +701,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 50);
 });
 </script>
-	
+
 </body>
 </html>
