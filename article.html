@@ -244,17 +244,22 @@ footer h3 {
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
     </button>
-</script><nav class="bg-[#0A1F33] text-white py-4 sticky top-0 z-[1000] shadow-xl">
+</script>
 
+<nav class="bg-[#14183d] text-white py-4 sticky top-0 z-[1000] shadow-xl">
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
-        <div class="flex items-center space-x-2">
-            <img src="STD.jpg" alt="Logo" class="h-12 w-auto">
-            <div class="leading-none">
-                <span class="text-xl font-bold tracking-tighter block">ENGINEERING AND</span>
-                <span class="text-[10px] text-[#4FA3D1] tracking-[0.2em] uppercase">CONSTRUCTION CO.,LTD.</span>
-            </div>
-        </div>
+      <div class="flex items-center space-x-1"> 
+	    <img src="STD 4.jpg" alt="Logo" class="h-12 w-auto object-contain">
+        <div class="leading-none -ml-1">
+        <span class="text-[19px] font-semibold block tracking-[0.1em] text-white">
+            ENGINEERING <span class="text-[14px] font-light opacity-80">AND</span>
+        </span>
+        <span class="text-[10px] text-[#4FA3D1] tracking-[0.3em] uppercase font-medium block mt-0.5">
+            CONSTRUCTION CO.,LTD.
+        </span>
+    </div>
+</div>
 
 <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
     <a href="index.html" class="hover:text-[#4FA3D1] transition">
@@ -265,58 +270,167 @@ footer h3 {
     </a>
     
     <div class="nav-item group">
-        <a href="services.html" class="nav-link flex items-center hover:text-[#4FA3D1] transition">
-            <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
-            <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+    <a href="services.html" class="nav-link flex items-center hover:text-[#4FA3D1] transition">
+        <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
+        <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+    </a>
+
+    <div class="dropdown">
+
+        <!-- LPG -->
+        <div class="dropdown-item sub-menu">
+            <a href="LPG.html">
+                <i class="fas fa-fire"></i> 
+                <span class="lang-th">ก๊าซปิโตรเลียมเหลว (LPG)</span>
+                <span class="lang-en hidden">Liquefied Petroleum Gas (LPG)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่ใช้ LPG / โรงบรรจุ / คลังก๊าซ</span>
+                    <span class="lang-en hidden">LPG Utilization Facilities / Filling Plants / Gas Depots</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 5 ปี</span>
+                    <span class="lang-en hidden">Five-Year Periodic Inspection and Certification</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">รถขนส่งก๊าซ LPG</span>
+                    <span class="lang-en hidden">LPG Transportation Vehicles</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี / ครบวาระ</span>
+                    <span class="lang-en hidden">Annual and Periodic Compliance Inspection</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- NG -->
+        <div class="dropdown-item sub-menu">
+            <a href="#">
+                <i class="fas fa-gas-pump"></i> 
+                <span class="lang-th">ก๊าซธรรมชาติ (NGV/NG)</span>
+                <span class="lang-en hidden">Natural Gas (NGV/NG)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่ใช้ / รถขนส่ง / สถานีบริการ</span>
+                    <span class="lang-en hidden">Utilization Sites / Transport Vehicles / Service Stations</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 3 ปี</span>
+                    <span class="lang-en hidden">Three-Year Periodic Inspection</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 5 ปี</span>
+                    <span class="lang-en hidden">Five-Year Periodic Inspection</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 10 ปี (สถานี/รถ)</span>
+                    <span class="lang-en hidden">Ten-Year Major Inspection (Stations/Vehicles)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- OIL -->
+        <div class="dropdown-item sub-menu">
+            <a href="#">
+                <i class="fas fa-oil-can"></i> 
+                <span class="lang-th">น้ำมันเชื้อเพลิง (OIL)</span>
+                <span class="lang-en hidden">Fuel Oil (OIL)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่เก็บ / สถานีบริการ</span>
+                    <span class="lang-en hidden">Storage Facilities / Service Stations</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 10 ปี</span>
+                    <span class="lang-en hidden">Ten-Year Periodic Inspection</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">คลังน้ำมัน</span>
+                    <span class="lang-en hidden">Oil Depots and Terminals</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี / ครบวาระ 15 ปี</span>
+                    <span class="lang-en hidden">Annual and Fifteen-Year Compliance Inspection</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">รถขนส่งน้ำมัน</span>
+                    <span class="lang-en hidden">Fuel Transportation Vehicles</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบระบบ VRU</span>
+                    <span class="lang-en hidden">Vapor Recovery Unit (VRU) System Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 6 ปี</span>
+                    <span class="lang-en hidden">Six-Year Periodic Inspection</span>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Other Services -->
+        <a href="write.html" class="dropdown-item">
+            <i class="fas fa-pencil-ruler"></i> 
+            <span class="lang-th">เขียนแบบและรายการคำนวณ</span>
+            <span class="lang-en hidden">Engineering Drawings and Design Calculations</span>
         </a>
-		
- <div class="dropdown">
-    <div class="dropdown-item sub-menu">
-        <a href="LPG.html"><i class="fas fa-fire"></i> ก๊าซปิโตรเลียมเหลว (LPG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่ใช้ LPG / โรงบรรจุ / คลังก๊าซ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 5 ปี</a>
-            <div class="sub-header">รถขนส่งก๊าซ LPG</div>
-            <a href="#">งานทดสอบประจำปี / ครบวาระ</a>
-        </div>
-    </div>
 
-    <div class="dropdown-item sub-menu">
-        <a href="#"><i class="fas fa-gas-pump"></i> ก๊าซธรรมชาติ (NGV/NG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่ใช้ / รถขนส่ง / สถานีบริการ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 3 ปี</a>
-            <a href="#">งานทดสอบครบวาระ 5 ปี</a>
-            <a href="#">งานทดสอบครบวาระ 10 ปี (สถานี/รถ)</a>
-        </div>
-    </div>
+        <a href="ndt.html" class="dropdown-item">
+            <i class="fas fa-search"></i> 
+            <span class="lang-th">งานตรวจสอบแบบไม่ทำลาย</span>
+            <span class="lang-en hidden">Non-Destructive Testing (NDT) Services</span>
+        </a>
 
-    <div class="dropdown-item sub-menu">
-        <a href="#"><i class="fas fa-oil-can"></i> น้ำมันเชื้อเพลิง (OIL) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่เก็บ / สถานีบริการ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 10 ปี</a>
-            <div class="sub-header">คลังน้ำมัน</div>
-            <a href="#">งานทดสอบประจำปี / ครบวาระ 15 ปี</a>
-            <div class="sub-header">รถขนส่งน้ำมัน</div>
-            <a href="#">งานทดสอบระบบ VRU</a>
-            <a href="#">งานทดสอบครบวาระ 6 ปี</a>
-        </div>
-    </div>
+        <a href="coor.html" class="dropdown-item">
+            <i class="fas fa-search"></i> 
+            <span class="lang-th">ประสานงานกรมธุรกิจพลังงานและพลังงานจังหวัด</span>
+            <span class="lang-en hidden">Regulatory Coordination with the Department of Energy Business and Provincial Energy Offices</span>
+        </a>
 
-    <a href="write.html" class="dropdown-item"><i class="fas fa-pencil-ruler"></i> เขียนแบบและรายการคำนวณ</a>
-    <a href="ndt.html" class="dropdown-item"><i class="fas fa-search"></i> งานตรวจสอบแบบไม่ทำลาย</a>
-	<a href="coor.html" class="dropdown-item"><i class="fas fa-search"></i> ประสานงานกรมธุรกิจพลังงานและพลังงานจังหวัด</a>
-</div>
+    </div>
 </div>
 
     <a href="article.html" class="hover:text-[#4FA3D1] transition">
         <span class="lang-th">บทความ</span><span class="lang-en hidden">Articles</span>
     </a>
-    <a href="projects0.html" class="hover:text-[#4FA3D1] transition">
+    <a href="projects.html" class="hover:text-[#4FA3D1] transition">
         <span class="lang-th">ผลงาน</span><span class="lang-en hidden">Projects</span>
     </a>
     <a href="contact.html" class="hover:text-[#4FA3D1] transition">
@@ -413,116 +527,287 @@ footer h3 {
                 <div class="relative overflow-hidden h-52">
                     <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80" alt="STD Inspection" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase tracking-tighter">Knowledge</div>
-                </div>
-                <div class="p-6">
-                    <div class="text-gray-400 text-xs mb-3">12 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</div>
-                    <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">STD คืออะไร? ทำไมโรงงานอุตสาหกรรมต้องตรวจสอบทุกปี</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4">เจาะลึกความสำคัญของการทดสอบโดยไม่ทำลาย  และมาตรฐานที่กฎหมายกำหนด...</p>
-                    <a href="a1.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
-                <div class="relative overflow-hidden h-52">
-                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80" alt="LPG Tank" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                    <div class="absolute top-4 left-4 bg-[#1F3B57] text-white text-xs px-3 py-1 rounded-full uppercase tracking-tighter">Safety</div>
-                </div>
-                <div class="p-6">
-                    <div class="text-gray-400 text-xs mb-3">10 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</div>
-                    <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">5 สัญญาณเตือน! ถึงเวลาตรวจสภาพถัง LPG และระบบท่อก๊าซ</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4">อย่ารอให้เกิดเหตุอันตราย เรียนรู้วิธีสังเกตความผิดปกติเบื้องต้นของระบบก๊าซในสถานประกอบการ...</p>
-                    <a href="a2.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
-                </div>
-            </article>
-
-            <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
-                <div class="relative overflow-hidden h-52">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80" alt="Gas Station" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                    <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase tracking-tighter">Regulation</div>
-                </div>
-                <div class="p-6">
-                    <div class="text-gray-400 text-xs mb-3">05 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</div>
-                    <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">สรุปข้อกฎหมายใหม่ ปี 2569 เกี่ยวกับสถานีบริการ NGV</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4">อัปเดตประกาศล่าสุดจากกรมธุรกิจพลังงานที่ผู้ประกอบการต้องรู้ เพื่อการต่อใบอนุญาตที่ราบรื่น...</p>
-                    <a href="a3.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
-                </div>
-            </article>
-            
-            <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
-    <div class="relative overflow-hidden h-52">
-        <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80" alt="LPG Safety" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">LPG System</div>
+				</div>
+<div class="p-6">
+    <div class="text-gray-400 text-xs mb-3">
+        <span class="lang-th">12 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</span>
+        <span class="lang-en hidden">12 February 2026 | By STD Engineering Team</span>
     </div>
+
+    <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+        <span class="lang-th">STD คืออะไร? ทำไมโรงงานอุตสาหกรรมต้องตรวจสอบทุกปี</span>
+        <span class="lang-en hidden">What is STD? Why Industrial Facilities Require Annual Inspection</span>
+    </h3>
+
+    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+        <span class="lang-th">เจาะลึกความสำคัญของการทดสอบโดยไม่ทำลาย และมาตรฐานที่กฎหมายกำหนด...</span>
+        <span class="lang-en hidden">An in-depth look at the importance of Non-Destructive Testing (NDT) and legally mandated standards...</span>
+    </p>
+
+    <a href="a1.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+        <span class="lang-th">อ่านเพิ่มเติม</span>
+        <span class="lang-en hidden">Read More</span>
+        <span class="ml-1">→</span>
+    </a>
+</div>
+</article>
+
+
+<article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
+    <div class="relative overflow-hidden h-52">
+        <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80" alt="LPG Tank" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute top-4 left-4 bg-[#1F3B57] text-white text-xs px-3 py-1 rounded-full uppercase tracking-tighter">
+            Safety
+        </div>
+    </div>
+
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">03 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">ความสำคัญของการตรวจก๊าซ LPG ในโรงงานและอาคาร</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">เจาะลึกความเสี่ยงการสะสมของก๊าซใกล้พื้นดิน และการติดตั้งระบบแจ้งเตือน %LEL ที่ถูกต้องตามมาตรฐาน...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">10 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">10 February 2026 | By STD Engineering Team</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">5 สัญญาณเตือน! ถึงเวลาตรวจสภาพถัง LPG และระบบท่อก๊าซ</span>
+            <span class="lang-en hidden">5 Warning Signs! Time to Inspect LPG Tanks and Gas Piping Systems</span>
+        </h3>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">อย่ารอให้เกิดเหตุอันตราย เรียนรู้วิธีสังเกตความผิดปกติเบื้องต้นของระบบก๊าซในสถานประกอบการ...</span>
+            <span class="lang-en hidden">Do not wait for an incident to occur. Learn how to identify early signs of gas system abnormalities within your facility...</span>
+        </p>
+
+        <a href="a2.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
+
+<article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
+    <div class="relative overflow-hidden h-52">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80" alt="Gas Station" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase tracking-tighter">
+            Regulation
+        </div>
+    </div>
+
+    <div class="p-6">
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">05 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">05 February 2026 | By STD Engineering Team</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">สรุปข้อกฎหมายใหม่ ปี 2569 เกี่ยวกับสถานีบริการ NGV</span>
+            <span class="lang-en hidden">Summary of the New 2026 Regulations for NGV Service Stations</span>
+        </h3>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">อัปเดตประกาศล่าสุดจากกรมธุรกิจพลังงานที่ผู้ประกอบการต้องรู้ เพื่อการต่อใบอนุญาตที่ราบรื่น...</span>
+            <span class="lang-en hidden">Latest regulatory updates from the Department of Energy Business that operators must understand to ensure smooth license renewal...</span>
+        </p>
+
+        <a href="a3.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
+    </div>
+</article>
+
+
+<article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
+    <div class="relative overflow-hidden h-52">
+        <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80" alt="LPG Safety" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">
+            LPG System
+        </div>
+    </div>
+
+    <div class="p-6">
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">03 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">03 February 2026 | By STD Engineering Team</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">ความสำคัญของการตรวจก๊าซ LPG ในโรงงานและอาคาร</span>
+            <span class="lang-en hidden">The Importance of LPG Gas Detection in Industrial Facilities and Buildings</span>
+        </h3>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">เจาะลึกความเสี่ยงการสะสมของก๊าซใกล้พื้นดิน และการติดตั้งระบบแจ้งเตือน %LEL ที่ถูกต้องตามมาตรฐาน...</span>
+            <span class="lang-en hidden">An in-depth analysis of gas accumulation risks near ground level and the proper installation of %LEL alarm systems in accordance with standards...</span>
+        </p>
+
+        <a href="a4.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
+    </div>
+</article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
         <img src="a1.jpg" alt="Natural Gas" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">NG System</div>
+        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">
+            NG System
+        </div>
     </div>
+
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">01 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">การออกแบบระบบตรวจก๊าซ NG ให้ปลอดภัยตามหลักวิศวกรรม</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">ทำไมต้องวางเซนเซอร์ด้านบน? เรียนรู้การเลือก Infrared Sensor และระบบตัดวาล์วอัตโนมัติ...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">01 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">01 February 2026 | By STD Engineering Team</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">การออกแบบระบบตรวจก๊าซ NG ให้ปลอดภัยตามหลักวิศวกรรม</span>
+            <span class="lang-en hidden">Engineering Design Principles for Safe NG Gas Detection Systems</span>
+        </h3>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">ทำไมต้องวางเซนเซอร์ด้านบน? เรียนรู้การเลือก Infrared Sensor และระบบตัดวาล์วอัตโนมัติ...</span>
+            <span class="lang-en hidden">Why must sensors be installed at elevated positions? Learn about selecting Infrared Sensors and automatic shut-off valve systems...</span>
+        </p>
+
+        <a href="a5.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
         <img src="a2.jpg" alt="Oil Vapor" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Oil & Gas</div>
+        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">
+            Oil & Gas
+        </div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">28 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">การตรวจจับไอระเหยน้ำมัน ในคลังเก็บและสถานีบริการ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">เทคนิคการป้องกันบรรยากาศไวไฟและการเลือกอุปกรณ์ Explosion-proof สำหรับคลังน้ำมัน...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">28 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">28 January 2026 | By STD Engineering Team</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">การตรวจจับไอระเหยน้ำมัน ในคลังเก็บและสถานีบริการ</span>
+            <span class="lang-en hidden">Oil Vapor Detection in Storage Terminals and Service Stations</span>
+        </h3>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">เทคนิคการป้องกันบรรยากาศไวไฟและการเลือกอุปกรณ์ Explosion-proof สำหรับคลังน้ำมัน...</span>
+            <span class="lang-en hidden">Techniques for preventing flammable atmospheres and selecting Explosion-proof equipment for oil storage facilities...</span>
+        </p>
+
+        <a href="a6.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
         <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80" alt="LEL Calculation" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Engineering</div>
+        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">
+            Engineering
+        </div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">25 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">การคำนวณค่า LEL และการตั้งค่า Alarm Level</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">เข้าใจหลักการ Lower Explosive Limit เพื่อการตั้งค่าแจ้งเตือนที่แม่นยำและปลอดภัยที่สุด...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">25 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">25 January 2026 | By STD Engineering Team</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">การคำนวณค่า LEL และการตั้งค่า Alarm Level</span>
+            <span class="lang-en hidden">LEL Calculation and Alarm Level Configuration</span>
+        </h3>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">เข้าใจหลักการ Lower Explosive Limit เพื่อการตั้งค่าแจ้งเตือนที่แม่นยำและปลอดภัยที่สุด...</span>
+            <span class="lang-en hidden">Understanding the Lower Explosive Limit (LEL) principle to ensure precise and optimal alarm level configuration...</span>
+        </p>
+
+        <a href="a7.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
         <img src="a3.jpg" alt="Explosion Proof" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-        <div class="absolute top-4 left-4 bg-[#1F3B57] text-white text-xs px-3 py-1 rounded-full uppercase">Standards</div>
+        <div class="absolute top-4 left-4 bg-[#1F3B57] text-white text-xs px-3 py-1 rounded-full uppercase">
+            Standards
+        </div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">22 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">มาตรฐาน Explosion-proof และการเลือกใช้ในไทย</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">คู่มือการเลือกอุปกรณ์ตามมาตรฐาน IEC และ ATEX Directive สำหรับวิศวกรโรงงาน...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">22 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">22 January 2026 | By STD Engineering Team</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">มาตรฐาน Explosion-proof และการเลือกใช้ในไทย</span>
+            <span class="lang-en hidden">Explosion-Proof Standards and Their Application in Thailand</span>
+        </h3>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">คู่มือการเลือกอุปกรณ์ตามมาตรฐาน IEC และ ATEX Directive สำหรับวิศวกรโรงงาน...</span>
+            <span class="lang-en hidden">A practical guide to selecting equipment in compliance with IEC standards and the ATEX Directive for industrial engineers...</span>
+        </p>
+
+        <a href="a8.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
         <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80" alt="NDT Inspection" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">NDT</div>
+        <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">
+            NDT
+        </div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">20 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">ความสำคัญของ NDT ในถังเก็บ LPG และท่อส่งก๊าซ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">ตรวจสอบรอยร้าวและการกัดกร่อนโดยไม่ทำลายโครงสร้าง เพื่อยืดอายุการใช้งานถังเก็บ...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">20 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">20 January 2026 | By STD Engineering Team</span>
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">ความสำคัญของ NDT ในถังเก็บ LPG และท่อส่งก๊าซ</span>
+            <span class="lang-en hidden">The Importance of NDT in LPG Storage Tanks and Gas Pipelines</span>
+        </h3>
+
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">ตรวจสอบรอยร้าวและการกัดกร่อนโดยไม่ทำลายโครงสร้าง เพื่อยืดอายุการใช้งานถังเก็บ...</span>
+            <span class="lang-en hidden">Detecting cracks and corrosion without structural damage to extend the service life of storage tanks...</span>
+        </p>
+
+        <a href="a9.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
 
@@ -532,12 +817,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Technical</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">18 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">ประเภทงาน NDT (UT, RT, MT, PT) สำหรับอุตสาหกรรมก๊าซ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">สรุปวิธีเลือกใช้เทคนิค NDT ให้เหมาะสมกับหน้างานและมาตรฐานความปลอดภัย...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">18 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">18 January 2026 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">ประเภทงาน NDT (UT, RT, MT, PT) สำหรับอุตสาหกรรมก๊าซ</span>
+            <span class="lang-en hidden">Types of NDT (UT, RT, MT, PT) for the Gas Industry</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">สรุปวิธีเลือกใช้เทคนิค NDT ให้เหมาะสมกับหน้างานและมาตรฐานความปลอดภัย...</span>
+            <span class="lang-en hidden">A comprehensive guide to selecting appropriate NDT techniques in accordance with site conditions and safety standards...</span>
+        </p>
+        <a href="a10.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -545,12 +844,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Maintenance</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">15 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">การตรวจสอบความหนาท่อ (Thickness) ป้องกันการรั่วไหล</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">เทคนิคการวัดการกัดกร่อนภายในท่อส่งก๊าซด้วยเครื่องมือ Ultrasonic ที่แม่นยำสูง...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">15 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">15 January 2026 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">การตรวจสอบความหนาท่อ (Thickness) ป้องกันการรั่วไหล</span>
+            <span class="lang-en hidden">Pipeline Thickness Inspection to Prevent Leakage</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">เทคนิคการวัดการกัดกร่อนภายในท่อส่งก๊าซด้วยเครื่องมือ Ultrasonic ที่แม่นยำสูง...</span>
+            <span class="lang-en hidden">Advanced ultrasonic techniques for accurately measuring internal corrosion in gas pipelines...</span>
+        </p>
+        <a href="a11.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -558,12 +871,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Welding</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">12 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">การตรวจสอบรอยเชื่อมท่อ LPG/NG ตามมาตรฐานสากล</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">การตรวจ RT และ UT เพื่อรับรองคุณภาพงานเชื่อมท่อแรงดันสูงตามกฎหมาย...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">12 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">12 January 2026 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">การตรวจสอบรอยเชื่อมท่อ LPG/NG ตามมาตรฐานสากล</span>
+            <span class="lang-en hidden">LPG/NG Pipeline Weld Inspection in Compliance with International Standards</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">การตรวจ RT และ UT เพื่อรับรองคุณภาพงานเชื่อมท่อแรงดันสูงตามกฎหมาย...</span>
+            <span class="lang-en hidden">RT and UT inspections to certify high-pressure pipeline welding quality in accordance with legal requirements...</span>
+        </p>
+        <a href="a12.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -571,12 +898,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#1F3B57] text-white text-xs px-3 py-1 rounded-full uppercase">ASNT</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">10 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">มาตรฐานการรับรองผู้ตรวจ NDT (ASNT) ในไทย</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">ทำไมผู้ตรวจสอบต้องมีใบเซอร์? เจาะลึกความสำคัญของมาตรฐาน ASNT ระดับสากล...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">10 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">10 January 2026 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">มาตรฐานการรับรองผู้ตรวจ NDT (ASNT) ในไทย</span>
+            <span class="lang-en hidden">NDT Inspector Certification Standards (ASNT) in Thailand</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">ทำไมผู้ตรวจสอบต้องมีใบเซอร์? เจาะลึกความสำคัญของมาตรฐาน ASNT ระดับสากล...</span>
+            <span class="lang-en hidden">Why certification is essential for inspectors: An in-depth look at internationally recognized ASNT standards...</span>
+        </p>
+        <a href="a13.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -584,10 +925,23 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Regulation</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">08 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">กฎหมายควบคุมโรงงานก๊าซ LPG และ NG ที่ควรรู้</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">อัปเดตข้อกำหนดจากกรมโรงงานอุตสาหกรรม และ พ.ร.บ. โรงงาน ฉบับล่าสุด...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">08 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">08 January 2026 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">กฎหมายควบคุมโรงงานก๊าซ LPG และ NG ที่ควรรู้</span>
+            <span class="lang-en hidden">Key Regulatory Requirements for LPG and NG Facilities</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">อัปเดตข้อกำหนดจากกรมโรงงานอุตสาหกรรม และ พ.ร.บ. โรงงาน ฉบับล่าสุด...</span>
+            <span class="lang-en hidden">Latest regulatory updates from the Department of Industrial Works and the Factory Act...</span>
+        </p>
+        <a href="a14.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
 
@@ -597,12 +951,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Energy</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">05 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">ข้อกำหนดกรมธุรกิจพลังงาน เรื่องการเก็บก๊าซ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">มาตรฐานความปลอดภัยในการจัดเก็บถังและสถานีจ่ายก๊าซให้ถูกต้องตามกฎหมาย...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">05 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">05 January 2026 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">ข้อกำหนดกรมธุรกิจพลังงาน เรื่องการเก็บก๊าซ</span>
+            <span class="lang-en hidden">Department of Energy Business Regulations on Gas Storage</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">มาตรฐานความปลอดภัยในการจัดเก็บถังและสถานีจ่ายก๊าซให้ถูกต้องตามกฎหมาย...</span>
+            <span class="lang-en hidden">Safety standards for the lawful storage of gas cylinders and fueling stations in compliance with regulatory requirements...</span>
+        </p>
+        <a href="a15.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -610,12 +978,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Labor Law</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">03 มกราคม 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">มาตรฐานความปลอดภัยก๊าซ ในพื้นที่อับอากาศ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">แนวทางการตรวจวัดค่าก๊าซก่อนปฏิบัติงานในที่อับอากาศ ตามกฎกระทรวงแรงงาน...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">03 มกราคม 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">03 January 2026 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">มาตรฐานความปลอดภัยก๊าซ ในพื้นที่อับอากาศ</span>
+            <span class="lang-en hidden">Gas Safety Standards in Confined Spaces</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">แนวทางการตรวจวัดค่าก๊าซก่อนปฏิบัติงานในที่อับอากาศ ตามกฎกระทรวงแรงงาน...</span>
+            <span class="lang-en hidden">Guidelines for gas monitoring prior to confined space entry in accordance with Ministry of Labour regulations...</span>
+        </p>
+        <a href="a16.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -623,12 +1005,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">IEAT</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">30 ธันวาคม 2025 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">บทบาท กนอ. ในการกำกับดูแลระบบความปลอดภัยก๊าซ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">เจาะลึกระเบียบปฏิบัติสำหรับโรงงานที่ตั้งอยู่ในนิคมอุตสาหกรรมทั่วประเทศไทย...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">30 ธันวาคม 2025 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">30 December 2025 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">บทบาท กนอ. ในการกำกับดูแลระบบความปลอดภัยก๊าซ</span>
+            <span class="lang-en hidden">The Role of IEAT in Supervising Gas Safety Systems</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">เจาะลึกระเบียบปฏิบัติสำหรับโรงงานที่ตั้งอยู่ในนิคมอุตสาหกรรมทั่วประเทศไทย...</span>
+            <span class="lang-en hidden">An in-depth review of compliance requirements for factories operating within industrial estates across Thailand...</span>
+        </p>
+        <a href="a17.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -636,10 +1032,23 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#1F3B57] text-white text-xs px-3 py-1 rounded-full uppercase">Audit</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">28 ธันวาคม 2025 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">ขั้นตอนการตรวจรับรองระบบก๊าซ ก่อนเปิดโรงงาน</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">คู่มือการเตรียมเอกสาร การตรวจโดยวิศวกร และการทดสอบระบบก่อนเริ่มดำเนินการ...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">28 ธันวาคม 2025 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">28 December 2025 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">ขั้นตอนการตรวจรับรองระบบก๊าซ ก่อนเปิดโรงงาน</span>
+            <span class="lang-en hidden">Gas System Certification Process Prior to Factory Commissioning</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">คู่มือการเตรียมเอกสาร การตรวจโดยวิศวกร และการทดสอบระบบก่อนเริ่มดำเนินการ...</span>
+            <span class="lang-en hidden">A comprehensive guide to documentation preparation, engineering inspections, and system testing prior to operational startup...</span>
+        </p>
+        <a href="a18.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
 
@@ -649,12 +1058,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Calibration</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">25 ธันวาคม 2025 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">แผนบำรุงรักษา Gas Detection ตามกฎหมายไทย</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">ความถี่ในการทำ Calibration และการจัดเก็บ Logbook เพื่อรองรับการตรวจสอบจากรัฐ...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">25 ธันวาคม 2025 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">25 December 2025 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">แผนบำรุงรักษา Gas Detection ตามกฎหมายไทย</span>
+            <span class="lang-en hidden">Gas Detection Maintenance Plan in Compliance with Thai Regulations</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">ความถี่ในการทำ Calibration และการจัดเก็บ Logbook เพื่อรองรับการตรวจสอบจากรัฐ...</span>
+            <span class="lang-en hidden">Calibration frequency requirements and logbook record management to ensure readiness for regulatory inspections...</span>
+        </p>
+        <a href="a19.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -662,12 +1085,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">HAZOP</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">22 ธันวาคม 2025 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">การทำ Risk Assessment สำหรับระบบก๊าซ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">วิเคราะห์ความเสี่ยงด้วยวิธี HAZID และ HAZOP เพื่อลดโอกาสการเกิดอุบัติเหตุร้ายแรง...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">22 ธันวาคม 2025 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">22 December 2025 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">การทำ Risk Assessment สำหรับระบบก๊าซ</span>
+            <span class="lang-en hidden">Risk Assessment for Gas Systems</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">วิเคราะห์ความเสี่ยงด้วยวิธี HAZID และ HAZOP เพื่อลดโอกาสการเกิดอุบัติเหตุร้ายแรง...</span>
+            <span class="lang-en hidden">Risk analysis using HAZID and HAZOP methodologies to minimize the likelihood of severe industrial accidents...</span>
+        </p>
+        <a href="a20.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -675,12 +1112,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#4FA3D1] text-white text-xs px-3 py-1 rounded-full uppercase">Emergency</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">20 ธันวาคม 2025 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">การซ้อมแผนอพยพ กรณีเกิดเหตุรั่วไหลของก๊าซ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">แนวทางปฏิบัติและการจัดทำ Emergency Response Plan ตามมาตรฐานอุตสาหกรรม...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">20 ธันวาคม 2025 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">20 December 2025 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">การซ้อมแผนอพยพ กรณีเกิดเหตุรั่วไหลของก๊าซ</span>
+            <span class="lang-en hidden">Evacuation Drill for Gas Leakage Incidents</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">แนวทางปฏิบัติและการจัดทำ Emergency Response Plan ตามมาตรฐานอุตสาหกรรม...</span>
+            <span class="lang-en hidden">Operational procedures and Emergency Response Plan development in accordance with industrial safety standards...</span>
+        </p>
+        <a href="a21.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -688,12 +1139,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#1F3B57] text-white text-xs px-3 py-1 rounded-full uppercase">Lawsuit</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">15 ธันวาคม 2025 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">ความรับผิดและบทลงโทษ เมื่อไม่ติดระบบตรวจก๊าซ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">เจาะลึกโทษทางแพ่ง อาญา และผลกระทบต่อเบี้ยประกันภัยกรณีละเลยความปลอดภัย...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">15 ธันวาคม 2025 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">15 December 2025 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">ความรับผิดและบทลงโทษ เมื่อไม่ติดระบบตรวจก๊าซ</span>
+            <span class="lang-en hidden">Liability and Legal Penalties for Failure to Install Gas Detection Systems</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">เจาะลึกโทษทางแพ่ง อาญา และผลกระทบต่อเบี้ยประกันภัยกรณีละเลยความปลอดภัย...</span>
+            <span class="lang-en hidden">An in-depth analysis of civil and criminal liabilities, including the impact on insurance premiums resulting from safety negligence...</span>
+        </p>
+        <a href="a22.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -701,12 +1166,26 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#1F3B57] text-white text-xs px-3 py-1 rounded-full uppercase">ISO/NFPA</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">10 ธันวาคม 2025 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">ยกระดับโรงงานสู่มาตรฐาน OSHA, NFPA และ ISO</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">แนวทางการปรับปรุงระบบความปลอดภัยก๊าซให้เทียบเท่ามาตรฐานสากลเพื่อความยั่งยืน...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">10 ธันวาคม 2025 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">10 December 2025 | By STD Engineering Team</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">ยกระดับโรงงานสู่มาตรฐาน OSHA, NFPA และ ISO</span>
+            <span class="lang-en hidden">Upgrading Facilities to Meet OSHA, NFPA, and ISO Standards</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">แนวทางการปรับปรุงระบบความปลอดภัยก๊าซให้เทียบเท่ามาตรฐานสากลเพื่อความยั่งยืน...</span>
+            <span class="lang-en hidden">Strategic improvements to gas safety systems aligned with international standards to ensure long-term sustainability...</span>
+        </p>
+        <a href="a23.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
     </div>
 </article>
+
 
 <article class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-2 transition duration-500 group" data-aos="fade-up">
     <div class="relative overflow-hidden h-52">
@@ -714,14 +1193,24 @@ footer h3 {
         <div class="absolute top-4 left-4 bg-[#6366f1] text-white text-xs px-3 py-1 rounded-full uppercase tracking-tighter">Innovation</div>
     </div>
     <div class="p-6">
-        <div class="text-gray-400 text-xs mb-3">23 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</div>
-        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">การใช้ AI และ Machine Learning ตรวจจับความผิดปกติในระบบก๊าซ</h3>
-        <p class="text-gray-600 text-sm leading-relaxed mb-4">ก้าวไปอีกขั้นกับ Smart Factory ด้วยการใช้ AI วิเคราะห์ข้อมูลจาก Sensor เพื่อพยากรณ์การรั่วไหลล่วงหน้า (Predictive Maintenance)...</p>
-        <a href="#" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">อ่านเพิ่มเติม <span class="ml-1">→</span></a>
-    </div>
-</article>
-
+        <div class="text-gray-400 text-xs mb-3">
+            <span class="lang-th">23 กุมภาพันธ์ 2026 | โดย ทีมวิศวกร STD</span>
+            <span class="lang-en hidden">23 February 2026 | By STD Engineering Team</span>
         </div>
+        <h3 class="text-xl font-bold text-[#0A1F33] mb-3 group-hover:text-[#4FA3D1] transition">
+            <span class="lang-th">การใช้ AI และ Machine Learning ตรวจจับความผิดปกติในระบบก๊าซ</span>
+            <span class="lang-en hidden">AI and Machine Learning for Anomaly Detection in Gas Systems</span>
+        </h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            <span class="lang-th">ก้าวไปอีกขั้นกับ Smart Factory ด้วยการใช้ AI วิเคราะห์ข้อมูลจาก Sensor เพื่อพยากรณ์การรั่วไหลล่วงหน้า (Predictive Maintenance)...</span>
+            <span class="lang-en hidden">Advancing toward Smart Factory operations through AI-driven sensor data analytics to predict gas leakage in advance (Predictive Maintenan
+        </p>
+        <a href="a24.html" class="text-[#0A1F33] font-bold text-sm flex items-center group-hover:gap-2 transition-all">
+            <span class="lang-th">อ่านเพิ่มเติม</span>
+            <span class="lang-en hidden">Read More</span>
+            <span class="ml-1">→</span>
+        </a>
+        
     </div>
 </section>
 

@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
-           body { font-family: 'Prompt', sans-serif; }
+        body { font-family: 'Prompt', sans-serif; }
         .hero-gradient {
             background: linear-gradient(rgba(10, 31, 51, 0.8), rgba(10, 31, 51, 0.8)), url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80');
             background-size: cover;
@@ -49,7 +51,7 @@
 
 
         footer {
-    background: linear-gradient(180deg, #0A1F33 0%, #162C46 100%);
+    background: linear-gradient(180deg, #0A1F33 0%, #162C46 100%); 
     color: #ffffff;
     padding: 80px 0 30px;
     font-family: 'Prompt', sans-serif;
@@ -149,6 +151,74 @@ footer h3 {
     font-size: 0.85rem;
 }
 
+/* 1. หัวข้อกลุ่มในเมนูย่อย - ปรับให้ตัวเล็กลงและดูโปร่งขึ้น */
+.sub-header {
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    color: #2DD4BF; /* สีเขียว Teal ละมุนๆ */
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: rgba(45, 212, 191, 0.05); /* พื้นหลังจางๆ ให้ดูมีเลเยอร์ */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 2. เมนูย่อยที่กางออกมา - ปรับให้เป็นกระจกฝ้าโค้งมน */
+.sub-dropdown {
+    position: absolute;
+    left: 100%; 
+    top: 0;
+    background: rgba(15, 23, 42, 0.9); /* สีน้ำเงินเข้มแบบโปร่งแสง */
+    backdrop-filter: blur(12px); /* เอฟเฟกต์กระจกฝ้า ทำให้ดูนุ่มนวล */
+    min-width: 260px;
+    border-radius: 15px; /* เพิ่มความโค้งมนให้ดูละมุนขึ้น */
+    border: 1px solid rgba(45, 212, 191, 0.2); /* ขอบจางๆ ไม่แข็ง */
+    display: none;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    overflow: hidden; /* เพื่อให้พื้นหลัง sub-header ไม่ทะลุขอบโค้ง */
+    margin-left: 5px; /* เว้นระยะห่างจากเมนูหลักนิดหน่อย */
+}
+
+/* 3. รายการข้างในเมนูย่อย */
+.sub-dropdown a {
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.sub-dropdown a:hover {
+    background: rgba(45, 212, 191, 0.1);
+    color: #2DD4BF;
+    padding-left: 22px; /* เพิ่มลูกเล่นขยับนิดๆ เวลาเอาเมาส์ชี้ */
+}
+
+/* 4. รายการหลักที่มีเมนูย่อย */
+.sub-menu {
+    position: relative;
+}
+
+.sub-menu:hover .sub-dropdown {
+    display: block;
+    animation: fadeIn 0.2s ease-out; /* เพิ่มแอนิเมชันตอนปรากฏ */
+}
+
+/* 5. ลูกศรขวา - ปรับให้จางลงไม่แย่งสายตา */
+.float-right {
+    float: right;
+    font-size: 0.65rem;
+    opacity: 0.5;
+    margin-top: 4px;
+}
+
+/* แอนิเมชันตอนเปิดเมนู */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(5px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
 @media (max-width: 768px) {
     .footer-container {
         grid-template-columns: 1fr;
@@ -165,71 +235,9 @@ footer h3 {
 #mobile-menu li {
     list-style: none !important;
 }
-
-.sub-header {
-    padding: 10px 15px;
-    font-size: 0.75rem;
-    color: #2DD4BF;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    background: rgba(45, 212, 191, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.sub-dropdown {
-    position: absolute;
-    left: 100%; 
-    top: 0;
-    background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(12px);
-    min-width: 260px;
-    border-radius: 15px;
-    border: 1px solid rgba(45, 212, 191, 0.2);
-    display: none;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    margin-left: 5px;
-}
-
-.sub-dropdown a {
-    padding: 12px 18px;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
-    display: block;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.sub-dropdown a:hover {
-    background: rgba(45, 212, 191, 0.1);
-    color: #2DD4BF;
-    padding-left: 22px;
-}
-
-.sub-menu {
-    position: relative;
-}
-
-.sub-menu:hover .sub-dropdown {
-    display: block;
-    animation: fadeIn 0.2s ease-out;
-}
-
-.float-right {
-    float: right;
-    font-size: 0.65rem;
-    opacity: 0.5;
-    margin-top: 4px;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateX(5px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
 <script>
@@ -310,7 +318,7 @@ footer h3 {
 
         <!-- NG -->
         <div class="dropdown-item sub-menu">
-            <a href="ng.html">
+            <a href="#">
                 <i class="fas fa-gas-pump"></i> 
                 <span class="lang-th">ก๊าซธรรมชาติ (NGV/NG)</span>
                 <span class="lang-en hidden">Natural Gas (NGV/NG)</span>
@@ -347,7 +355,7 @@ footer h3 {
 
         <!-- OIL -->
         <div class="dropdown-item sub-menu">
-            <a href="oil.html">
+            <a href="#">
                 <i class="fas fa-oil-can"></i> 
                 <span class="lang-th">น้ำมันเชื้อเพลิง (OIL)</span>
                 <span class="lang-en hidden">Fuel Oil (OIL)</span>
@@ -504,176 +512,108 @@ footer h3 {
     </div>
 </nav>
 
-<section class="drawing-services-page py-16 bg-[#F8FAFC] font-['Prompt']">
-    <div class="max-w-6xl mx-auto px-6">
-        
-        <div class="bg-[#1E293B] rounded-3xl p-8 mb-12 shadow-2xl relative overflow-hidden border-b-4 border-[#3B82F6]">
-            <div class="relative z-10">
-                <div class="flex items-center gap-3 mb-4">
-                    <h2 class="text-2xl font-bold text-white">
-                        <span class="lang-th">งานเขียนแบบและรายการคำนวณ</span>
-                        <span class="lang-en hidden">Engineering Drawing & Calculation Services</span>
-                    </h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div class="text-gray-300 text-sm leading-relaxed">
-                        <p class="mb-4">
-                            <span class="lang-th">การออกแบบและจัดทำแบบทางวิศวกรรมที่ถูกต้องตามมาตรฐานเป็นหัวใจสำคัญของความปลอดภัย เราให้บริการเขียนแบบรายละเอียด (Detailed Design) ทั้งระบบเครื่องกล ไฟฟ้า และโยธา รวมถึงการจัดทำรายการคำนวณเพื่อขออนุญาตประกอบกิจการ หรือปรับปรุงระบบเดิมให้ทันสมัยและปลอดภัยสูงสุดตามกฎหมายกำหนด โดยทีมวิศวกรผู้เชี่ยวชาญที่มีประสบการณ์เฉพาะทาง</span>
-                            <span class="lang-en hidden">Accurate engineering design and documentation are the heart of operational safety. We provide comprehensive detailed design services across mechanical, electrical, and civil systems. Our services include technical calculations for permit applications and system upgrades, ensuring full compliance with legal standards and engineering best practices by our experienced professional engineers.</span>
-                        </p>
-                    </div>
-                    <div class="bg-blue-500/10 border border-blue-500/20 p-5 rounded-2xl">
-                        <h4 class="text-[#3B82F6] font-bold mb-2 flex items-center gap-2">
-                            <i class="fas fa-file-signature"></i> 
-                            <span class="lang-th">ความสำคัญของงานเขียนแบบ</span>
-                            <span class="lang-en hidden">Importance of Engineering Design</span>
-                        </h4>
-                        <p class="text-gray-300 text-xs leading-loose">
-                            <span class="lang-th">แบบแปลนที่ถูกต้องช่วยให้การติดตั้งและบำรุงรักษาเป็นไปอย่างมีประสิทธิภาพ ลดความเสี่ยงจากการทำงานผิดพลาด และเป็นเอกสารสำคัญที่ใช้ในการตรวจสอบความปลอดภัยตามวาระ รวมถึงใช้ประกอบการยื่นขอใบอนุญาตต่อหน่วยงานราชการที่เกี่ยวข้อง เพื่อให้ธุรกิจดำเนินไปได้อย่างราบรื่นและถูกต้องตามกฎหมาย</span>
-                            <span class="lang-en hidden">Professional blueprints ensure efficient installation and maintenance, significantly reducing operational errors. These documents are mandatory for periodic safety inspections and government permit applications, ensuring your business operations are legally compliant and structurally sound.</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
+<header class="bg-gray-50 py-16 border-b">
+    <div class="max-w-4xl mx-auto px-6">
+        <nav class="text-sm text-gray-400 mb-4">
+            <a href="index.html" class="hover:text-[#4FA3D1]">หน้าแรก</a> / 
+            <a href="article.html" class="hover:text-[#4FA3D1]">บทความ</a> / 
+            <span class="text-gray-600 uppercase">NGV Law 2026</span>
+        </nav>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-[#0A1F33] leading-tight">
+            ขมาตรฐาน Explosion-proof และการเลือกใช้ในประเทศไทย
+        </h1>
+        <div class="flex items-center mt-6 text-gray-500 text-sm">
+            <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i> 28 กุมภาพันธ์ 2569</span>
+            <span><i class="fas fa-gavel mr-2"></i> อัปเดตกฎหมายพลังงาน</span>
+        </div>
+    </div>
+</header>
+
+<main class="py-12 bg-white">
+    <article class="max-w-4xl mx-auto px-6">
+        <div class="rounded-2xl overflow-hidden mb-12 shadow-lg" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80" alt="Various NDT Inspection Methods in Gas Industry" class="w-full h-[450px] object-cover">
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-            <div class="gallery-block">
-                <div class="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white mb-4">
-                    <img id="mainDisplay" src="w1.jpg" class="w-full h-[350px] object-cover transition-opacity duration-300">
-                </div>
-                <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
-                    <img src="ข้อมูลถัง.jpg" onclick="updatePreview(this.src)" class="thumb-node active w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="lay out.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w1.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w2.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w3.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w4.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w5.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w6.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w7.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w8.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                    <img src="w9.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
-                </div>
-            </div>
+        <div class="article-content text-lg">
+            <p class="font-semibold text-[#0A1F33] text-xl mb-8 leading-relaxed">
+                <span class="lang-th">ในอุตสาหกรรมก๊าซที่ต้องทำงานภายใต้แรงดันสูงตลอด 24 ชั่วโมง **NDT (Non-Destructive Testing)** เปรียบเสมือน "ดวงตาแห่งวิศวกรรม" ที่มองทะลุเนื้อเหล็กเพื่อค้นหาจุดบกพร่องก่อนที่ความเสียหายจะปรากฏแก่สายตา</span>
+                <span class="lang-en hidden">In the 24/7 high-pressure gas industry, **NDT (Non-Destructive Testing)** acts as "engineering eyes," peering through steel to find defects before damage becomes visible.</span>
+            </p>
 
-            <div class="services-info">
-                <h3 class="text-2xl font-bold text-[#1E293B] mb-8 flex items-center gap-3">
-                    <span class="lang-th">ขอบข่ายงานบริการตรวจสอบเขียนแบบและรายการคำนวณ</span>
-                    <span class="lang-en hidden">Design & Certification Service Scope</span>
+            <section class="mt-12">
+                <h2 class="text-2xl font-bold text-[#0A1F33] mb-4 border-l-4 border-[#4FA3D1] pl-4">
+                    <span class="lang-th">1. UT (Ultrasonic Testing) – คลื่นเสียงทะลุเหล็ก</span>
+                    <span class="lang-en hidden">1. UT (Ultrasonic Testing) – Sound Waves Through Steel</span>
+                </h2>
+                
+                <p>
+                    <span class="lang-th">ใช้คลื่นเสียงความถี่สูงสะท้อนกลับเพื่อวัดความหนาและหารอยร้าวภายใน เหมาะอย่างยิ่งสำหรับการตรวจ **Corrosion Monitoring** ในท่อส่งก๊าซและถัง LPG เพื่อดูแนวโน้มการบางลงของโลหะปีต่อปี</span>
+                    <span class="lang-en hidden">Uses high-frequency sound waves to measure thickness and find internal cracks. Ideal for **Corrosion Monitoring** in gas pipelines and LPG tanks to track metal thinning annually.</span>
+                </p>
+            </section>
+
+            <section class="mt-12">
+                <h2 class="text-2xl font-bold text-[#0A1F33] mb-4 border-l-4 border-[#4FA3D1] pl-4">
+                    <span class="lang-th">2. RT (Radiographic Testing) – ภาพเอกซเรย์เปิดเผยความลับ</span>
+                    <span class="lang-en hidden">2. RT (Radiographic Testing) – X-ray Secrets Revealed</span>
+                </h2>
+                
+                <p>
+                    <span class="lang-th">ใช้รังสีเอกซเรย์ยิงผ่านชิ้นงานเพื่อสร้างภาพถ่ายภายในรอยเชื่อม มักเป็นขั้นตอนบังคับในงานก่อสร้างท่อก๊าซใหม่ เพื่อยืนยันว่าไม่มีโพรงอากาศหรือรอยร้าวซ่อนอยู่ภายในแนวเชื่อม</span>
+                    <span class="lang-en hidden">Uses X-rays to create internal images of welds. This is often a mandatory step in new gas pipeline construction to confirm no hidden air pockets or internal cracks.</span>
+                </p>
+            </section>
+
+            <section class="mt-12">
+                <h2 class="text-2xl font-bold text-[#0A1F33] mb-4 border-l-4 border-[#4FA3D1] pl-4">
+                    <span class="lang-th">3. MT (Magnetic Particle Testing) – สนามแม่เหล็กจับรอยแตก</span>
+                    <span class="lang-en hidden">3. MT (Magnetic Particle Testing) – Magnetic Crack Detection</span>
+                </h2>
+                
+                <p>
+                    <span class="lang-th">ใช้การเหนี่ยวนำสนามแม่เหล็กและผงแม่เหล็กเพื่อเปิดโปงรอยแตกบนพื้นผิวหรือใต้ผิวเพียงเล็กน้อย เหมาะสำหรับตรวจเช็คหน้าแปลน วาล์ว และรอยเชื่อมภายนอกในงานซ่อมบำรุงประจำปี</span>
+                    <span class="lang-en hidden">Uses magnetic induction and particles to reveal surface or near-surface cracks. Perfect for checking flanges, valves, and external welds during annual maintenance.</span>
+                </p>
+            </section>
+
+            <section class="mt-12">
+                <h2 class="text-2xl font-bold text-[#0A1F33] mb-4 border-l-4 border-[#4FA3D1] pl-4">
+                    <span class="lang-th">4. PT (Liquid Penetrant Testing) – ของเหลวค้นหารอยจิ๋ว</span>
+                    <span class="lang-en hidden">4. PT (Liquid Penetrant Testing) – Liquid Search for Tiny Cracks</span>
+                </h2>
+                <p>
+                    <span class="lang-th">ใช้สารแทรกซึมทาบนผิวเพื่อดึงสีออกมาจากรอยแตกขนาดเล็กที่ตาเปล่ามองไม่เห็น ใช้ได้กับวัสดุหลากหลายรวมถึงสแตนเลสและวัสดุที่ไม่เป็นแม่เหล็กในระบบก๊าซ</span>
+                    <span class="lang-en hidden">Uses penetrant dye to pull color from microscopic cracks invisible to the naked eye. Works on various materials, including stainless steel and non-magnetic components in gas systems.</span>
+                </p>
+            </section>
+
+            <div class="mt-16 p-8 bg-gray-50 rounded-2xl border border-gray-200">
+                <h3 class="text-xl font-bold text-[#0A1F33] mb-4 text-center">
+                    <span class="lang-th">บทสรุป: เพราะเหล็กก็มีวันอ่อนล้า</span>
+                    <span class="lang-en hidden">Conclusion: Because Steel Also Fails</span>
                 </h3>
-                <div class="space-y-6">
-                    <div class="service-box p-4 border-l-4 border-[#3B82F6] bg-white rounded-r-xl shadow-sm">
-                        <h5 class="font-bold mb-3">
-                            <span class="lang-th">งานเขียนแบบ (Engineering Drawing)</span>
-                            <span class="lang-en hidden">Engineering Drawing Services</span>
-                        </h5>
-                        <ul class="text-sm space-y-2">
-                            <li><i class="fas fa-check text-[#3B82F6] mr-2"></i> <span class="lang-th">ระบบเครื่องกล</span><span class="lang-en hidden">Mechanical Systems</span></li>
-                            <li><i class="fas fa-check text-[#3B82F6] mr-2"></i> <span class="lang-th">ระบบไฟฟ้า</span><span class="lang-en hidden">Electrical Systems</span></li>
-                            <li><i class="fas fa-check text-[#3B82F6] mr-2"></i> <span class="lang-th">ระบบโยธา</span><span class="lang-en hidden">Civil & Structural Systems</span></li>
-                            <li><i class="fas fa-check text-[#3B82F6] mr-2"></i> <span class="lang-th">งานติดตั้งระบบสปริงเกอร์</span><span class="lang-en hidden">Fire Sprinkler System Installation</span></li>
-                        </ul>
-                    </div>
-                    <div class="service-box p-4 border-l-4 border-[#3B82F6] bg-white rounded-r-xl shadow-sm border-none">
-                        <h5 class="font-bold mb-3">
-                            <span class="lang-th">งานเซ็นรับรองแบบ (Engineering Certification)</span>
-                            <span class="lang-en hidden">Professional Endorsement</span>
-                        </h5>
-                        <ul class="text-sm space-y-2">
-                            <li><i class="fas fa-check text-[#3B82F6] mr-2"></i> <span class="lang-th">ระบบเครื่องกล</span><span class="lang-en hidden">Mechanical Certification</span></li>
-                            <li><i class="fas fa-check text-[#3B82F6] mr-2"></i> <span class="lang-th">ระบบไฟฟ้า</span><span class="lang-en hidden">Electrical Certification</span></li>
-                            <li><i class="fas fa-check text-[#3B82F6] mr-2"></i> <span class="lang-th">ระบบโยธา</span><span class="lang-en hidden">Civil Certification</span></li>
-                            <li><i class="fas fa-check text-[#3B82F6] mr-2"></i> <span class="lang-th">งานติดตั้งระบบสปริงเกอร์</span><span class="lang-en hidden">Fire Sprinkler Certification</span></li>
-                        </ul>
-                    </div>
-                </div>
+                <p class="mb-0 text-gray-600">
+                    <span class="lang-th">การเลือกเทคนิค NDT ที่เหมาะสม หรือการใช้หลายวิธีควบคู่กัน คือการสร้าง "ระบบป้องกันหลายชั้น" เพื่อให้มั่นใจว่าโครงสร้างที่กักเก็บพลังงานมหาศาลจะยังคงปลอดภัย 100% ก่อนที่ความเสื่อมสภาพจะนำไปสู่ความสูญเสีย</span>
+                    <span class="lang-en hidden">Choosing the right NDT technique or combining methods creates a "multi-layer defense." This ensures structures holding massive energy remain 100% safe before deterioration leads to loss.</span>
+                </p>
             </div>
         </div>
-    </div>
-</section>
 
-<style>
-.thumb-node {
-    width: 80px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    opacity: 0.5;
-    transition: 0.3s;
-}
-
-.thumb-node:hover, .thumb-node.active {
-    opacity: 1;
-    border-color: #3B82F6;
-    transform: scale(1.05);
-}
-
-.service-box {
-    padding-left: 15px;
-    border-left: 3px solid #E2E8F0;
-    margin-bottom: 20px;
-    transition: 0.3s;
-}
-
-.service-box:hover {
-    border-left-color: #3B82F6;
-    padding-left: 20px;
-}
-
-.service-box h5 {
-    font-weight: 700;
-    color: #1E293B;
-    margin-bottom: 5px;
-    font-size: 1rem;
-}
-
-.service-box ul {
-    color: #64748B;
-}
-</style>
-
-<script>
-function updatePreview(source) {
-    const mainImg = document.getElementById('mainDisplay');
-    mainImg.src = source;
-    
-    // จัดการคลาส active
-    const thumbs = document.querySelectorAll('.thumb-node');
-    thumbs.forEach(t => t.classList.remove('active'));
-    event.target.classList.add('active');
-}
-</script>
-
-<div class="max-w-6xl mx-auto px-6 mb-20">
-    <div class="flex flex-col md:flex-row gap-4 justify-between border-t border-gray-200 pt-10">
-        
-        <a href="oil.html" class="group flex items-center gap-4 p-4 rounded-2xl border border-gray-200 hover:border-[#3B82F6] hover:bg-white transition-all duration-300 md:w-1/2">
-            <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-[#3B82F6] group-hover:text-white transition-colors">
-                <i class="fas fa-arrow-left"></i>
+        <div class="mt-16 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
+            <a href="article.html" class="text-[#4FA3D1] font-bold hover:underline flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i> 
+                <span class="lang-th">กลับไปหน้ารวมบทความ</span>
+                <span class="lang-en hidden">Back to All Articles</span>
+            </a>
+            <div class="flex gap-4">
+                <span class="text-gray-400">Share:</span>
+                <a href="#" class="text-blue-600 hover:scale-110 transition"><i class="fab fa-facebook text-xl"></i></a>
+                <a href="#" class="text-green-500 hover:scale-110 transition"><i class="fab fa-line text-xl"></i></a>
             </div>
-            <div>
-                <p class="text-xs text-gray-400 uppercase tracking-widest">ย้อนกลับ</p>
-                <h4 class="font-bold text-[#1E293B]">ตรวจสอบน้ำมัน</h4>
-            </div>
-        </a>
-
-        <a href="ndt.html" class="group flex items-center justify-between p-4 rounded-2xl border border-gray-200 hover:border-[#3B82F6] hover:bg-white transition-all duration-300 md:w-1/2 text-right">
-            <div class="ml-auto flex items-center gap-4">
-                <div>
-                    <p class="text-xs text-gray-400 uppercase tracking-widest">หน้าถัดไป</p>
-                    <h4 class="font-bold text-[#1E293B]">งานตรวจสอบแบบไม่ทำลาย</h4>
-                </div>
-                <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 group-hover:bg-[#3B82F6] group-hover:text-white transition-colors">
-                    <i class="fas fa-arrow-right"></i>
-                </div>
-            </div>
-        </a>
-
-    </div>
-</div>
+        </div>
+    </article>
+</main>
 
 <div class="fixed bottom-6 right-6 z-[9999] flex flex-col items-end space-y-4 group">
     
@@ -731,8 +671,8 @@ function updatePreview(source) {
                 <li><a href="index.html"><span class="lang-th">หน้าแรก</span><span class="lang-en hidden">Home</span></a></li>
                 <li><a href="about.html"><span class="lang-th">เกี่ยวกับเรา</span><span class="lang-en hidden">About Us</span></a></li>
                 <li><a href="services.html"><span class="lang-th">บริการของเรา</span><span class="lang-en hidden">Our Services</span></a></li>
-                <li><a href="ndt.html"><span class="lang-th">งาน NDT</span><span class="lang-en hidden">NDT Services</span></a></li>
                 <li><a href="article.html"><span class="lang-th">บทความ</span><span class="lang-en hidden">Articles</span></a></li>
+				<li><a href="quotation.html"><span class="lang-th">ขอบเสนอราคา</span><span class="lang-en hidden">Get a Quote</span></a></li>
             </ul>
         </div>
 
@@ -742,10 +682,12 @@ function updatePreview(source) {
                 <span class="lang-en hidden">Services</span>
             </h3>
             <ul>
-                <li><a href="#"><span class="lang-th">ตรวจสอบก๊าซ NGV/LPG</span><span class="lang-en hidden">NGV/LPG Inspection</span></a></li>
-                <li><a href="#"><span class="lang-th">ตรวจสอบคลังน้ำมัน</span><span class="lang-en hidden">Fuel Terminal Inspection</span></a></li>
-                <li><a href="#"><span class="lang-th">งานเขียนแบบคำนวณ</span><span class="lang-en hidden">Engineering Design</span></a></li>
-                <li><a href="#"><span class="lang-th">ตรวจสอบรับรองความปลอดภัย</span><span class="lang-en hidden">Safety Certification</span></a></li>
+                <li><a href="LPG.html"><span class="lang-th">ตรวจสอบก๊าซ LPG</span><span class="lang-en hidden">LPG Inspection</span></a></li>
+				<li><a href="ng.html"><span class="lang-th">ตรวจสอบก๊าซ NG/NGV</span><span class="lang-en hidden">NG/NGV Inspection</span></a></li>
+                <li><a href="oil.html"><span class="lang-th">ตรวจสอบน้ำมันเชื้อเพลิง</span><span class="lang-en hidden">OIL Inspection</span></a></li>
+                <li><a href="write.html"><span class="lang-th">งานเขียนแบบคำนวณ</span><span class="lang-en hidden">Engineering Design</span></a></li>
+                <li><a href="ndt.html"><span class="lang-th">ตรวจสอบแบบไม่ทำลาย</span><span class="lang-en hidden">NDT Inspection</span></a></li>
+				<li><a href="coor.html"><span class="lang-th">ประสานงานกรมธุรกิจพลังงานและพลังงานจังหวัด</span><span class="lang-en hidden">Coordination with the Department of Energy Business and Provincial Energy Offices</span></a></li>
             </ul>
         </div>
 
