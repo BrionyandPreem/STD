@@ -243,17 +243,22 @@ footer h3 {
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
     </button>
-</script><nav class="bg-[#0A1F33] text-white py-4 sticky top-0 z-[1000] shadow-xl">
+</script>
 
+<nav class="bg-[#14183d] text-white py-4 sticky top-0 z-[1000] shadow-xl">
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
-        <div class="flex items-center space-x-2">
-            <img src="STD.jpg" alt="Logo" class="h-12 w-auto">
-            <div class="leading-none">
-                <span class="text-xl font-bold tracking-tighter block">ENGINEERING AND</span>
-                <span class="text-[10px] text-[#4FA3D1] tracking-[0.2em] uppercase">CONSTRUCTION CO.,LTD.</span>
-            </div>
-        </div>
+      <div class="flex items-center space-x-1"> 
+	    <img src="STD 4.jpg" alt="Logo" class="h-12 w-auto object-contain">
+        <div class="leading-none -ml-1">
+        <span class="text-[19px] font-semibold block tracking-[0.1em] text-white">
+            ENGINEERING <span class="text-[14px] font-light opacity-80">AND</span>
+        </span>
+        <span class="text-[10px] text-[#4FA3D1] tracking-[0.3em] uppercase font-medium block mt-0.5">
+            CONSTRUCTION CO.,LTD.
+        </span>
+    </div>
+</div>
 
 <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
     <a href="index.html" class="hover:text-[#4FA3D1] transition">
@@ -264,58 +269,167 @@ footer h3 {
     </a>
     
     <div class="nav-item group">
-        <a href="services.html" class="nav-link flex items-center hover:text-[#4FA3D1] transition">
-            <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
-            <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+    <a href="services.html" class="nav-link flex items-center hover:text-[#4FA3D1] transition">
+        <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
+        <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+    </a>
+
+    <div class="dropdown">
+
+        <!-- LPG -->
+        <div class="dropdown-item sub-menu">
+            <a href="LPG.html">
+                <i class="fas fa-fire"></i> 
+                <span class="lang-th">ก๊าซปิโตรเลียมเหลว (LPG)</span>
+                <span class="lang-en hidden">Liquefied Petroleum Gas (LPG)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่ใช้ LPG / โรงบรรจุ / คลังก๊าซ</span>
+                    <span class="lang-en hidden">LPG Utilization Facilities / Filling Plants / Gas Depots</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 5 ปี</span>
+                    <span class="lang-en hidden">Five-Year Periodic Inspection and Certification</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">รถขนส่งก๊าซ LPG</span>
+                    <span class="lang-en hidden">LPG Transportation Vehicles</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี / ครบวาระ</span>
+                    <span class="lang-en hidden">Annual and Periodic Compliance Inspection</span>
+                </a>
+            </div>
+        </div>
+
+                <!-- NG -->
+        <div class="dropdown-item sub-menu">
+            <a href="ng.html">
+                <i class="fas fa-gas-pump"></i> 
+                <span class="lang-th">ก๊าซธรรมชาติ (NGV/NG)</span>
+                <span class="lang-en hidden">Natural Gas (NGV/NG)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่ใช้ / รถขนส่ง / สถานีบริการ</span>
+                    <span class="lang-en hidden">Utilization Sites / Transport Vehicles / Service Stations</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 3 ปี</span>
+                    <span class="lang-en hidden">Three-Year Periodic Inspection</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 5 ปี</span>
+                    <span class="lang-en hidden">Five-Year Periodic Inspection</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 10 ปี (สถานี/รถ)</span>
+                    <span class="lang-en hidden">Ten-Year Major Inspection (Stations/Vehicles)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- OIL -->
+        <div class="dropdown-item sub-menu">
+            <a href="oil.html">
+                <i class="fas fa-oil-can"></i> 
+                <span class="lang-th">น้ำมันเชื้อเพลิง (OIL)</span>
+                <span class="lang-en hidden">Fuel Oil (OIL)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่เก็บ / สถานีบริการ</span>
+                    <span class="lang-en hidden">Storage Facilities / Service Stations</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 10 ปี</span>
+                    <span class="lang-en hidden">Ten-Year Periodic Inspection</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">คลังน้ำมัน</span>
+                    <span class="lang-en hidden">Oil Depots and Terminals</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี / ครบวาระ 15 ปี</span>
+                    <span class="lang-en hidden">Annual and Fifteen-Year Compliance Inspection</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">รถขนส่งน้ำมัน</span>
+                    <span class="lang-en hidden">Fuel Transportation Vehicles</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบระบบ VRU</span>
+                    <span class="lang-en hidden">Vapor Recovery Unit (VRU) System Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 6 ปี</span>
+                    <span class="lang-en hidden">Six-Year Periodic Inspection</span>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Other Services -->
+        <a href="write.html" class="dropdown-item">
+            <i class="fas fa-pencil-ruler"></i> 
+            <span class="lang-th">เขียนแบบและรายการคำนวณ</span>
+            <span class="lang-en hidden">Engineering Drawings and Design Calculations</span>
         </a>
-		
- <div class="dropdown">
-    <div class="dropdown-item sub-menu">
-        <a href="#"><i class="fas fa-fire"></i> ก๊าซปิโตรเลียมเหลว (LPG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่ใช้ LPG / โรงบรรจุ / คลังก๊าซ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 5 ปี</a>
-            <div class="sub-header">รถขนส่งก๊าซ LPG</div>
-            <a href="#">งานทดสอบประจำปี / ครบวาระ</a>
-        </div>
-    </div>
 
-    <div class="dropdown-item sub-menu">
-        <a href="#"><i class="fas fa-gas-pump"></i> ก๊าซธรรมชาติ (NGV/NG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่ใช้ / รถขนส่ง / สถานีบริการ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 3 ปี</a>
-            <a href="#">งานทดสอบครบวาระ 5 ปี</a>
-            <a href="#">งานทดสอบครบวาระ 10 ปี (สถานี/รถ)</a>
-        </div>
-    </div>
+        <a href="ndt.html" class="dropdown-item">
+            <i class="fas fa-search"></i> 
+            <span class="lang-th">งานตรวจสอบแบบไม่ทำลาย</span>
+            <span class="lang-en hidden">Non-Destructive Testing (NDT) Services</span>
+        </a>
 
-    <div class="dropdown-item sub-menu">
-        <a href="#"><i class="fas fa-oil-can"></i> น้ำมันเชื้อเพลิง (OIL) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่เก็บ / สถานีบริการ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 10 ปี</a>
-            <div class="sub-header">คลังน้ำมัน</div>
-            <a href="#">งานทดสอบประจำปี / ครบวาระ 15 ปี</a>
-            <div class="sub-header">รถขนส่งน้ำมัน</div>
-            <a href="#">งานทดสอบระบบ VRU</a>
-            <a href="#">งานทดสอบครบวาระ 6 ปี</a>
-        </div>
-    </div>
+        <a href="coor.html" class="dropdown-item">
+            <i class="fas fa-search"></i> 
+            <span class="lang-th">ประสานงานกรมธุรกิจพลังงานและพลังงานจังหวัด</span>
+            <span class="lang-en hidden">Regulatory Coordination with the Department of Energy Business and Provincial Energy Offices</span>
+        </a>
 
-    <a href="write.html" class="dropdown-item"><i class="fas fa-pencil-ruler"></i> เขียนแบบและรายการคำนวณ</a>
-    <a href="ndt.html" class="dropdown-item"><i class="fas fa-search"></i> งานตรวจสอบแบบไม่ทำลาย</a>
-	<a href="coor.html" class="dropdown-item"><i class="fas fa-search"></i> ประสานงานกรมธุรกิจพลังงานและพลังงานจังหวัด</a>
-</div>
+    </div>
 </div>
 
     <a href="article.html" class="hover:text-[#4FA3D1] transition">
         <span class="lang-th">บทความ</span><span class="lang-en hidden">Articles</span>
     </a>
-    <a href="projects0.html" class="hover:text-[#4FA3D1] transition">
+    <a href="projects.html" class="hover:text-[#4FA3D1] transition">
         <span class="lang-th">ผลงาน</span><span class="lang-en hidden">Projects</span>
     </a>
     <a href="contact.html" class="hover:text-[#4FA3D1] transition">
@@ -433,8 +547,14 @@ footer h3 {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-[#0A1F33] mb-4">วิสัยทัศน์</h3>
-                <p class="text-gray-600">ก้าวสู่การเป็นผู้นำด้านการตรวจสอบและทดสอบวิศวกรรมที่ได้รับความไว้วางใจสูงสุดในระดับประเทศ</p>
+                <h3 class="text-2xl font-bold text-[#0A1F33] mb-4">
+                    <span class="lang-th">วิสัยทัศน์</span>
+                    <span class="lang-en hidden">Vision</span>
+                </h3>
+                <p class="text-gray-600">
+                    <span class="lang-th">ก้าวสู่การเป็นผู้นำด้านการตรวจสอบและทดสอบวิศวกรรมที่ได้รับความไว้วางใจสูงสุดในระดับประเทศ</span>
+                    <span class="lang-en hidden">To become the nation's most trusted leader in engineering inspection and testing services.</span>
+                </p>
             </div>
 
             <div class="p-10 bg-gray-50 rounded-2xl border-b-4 border-transparent hover:border-[#4FA3D1] hover:shadow-2xl transition duration-500 group" data-aos="fade-up" data-aos-delay="100">
@@ -443,8 +563,14 @@ footer h3 {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-[#0A1F33] mb-4">พันธกิจ</h3>
-                <p class="text-gray-600">ส่งมอบงานตรวจสอบที่ถูกต้อง แม่นยำ และปลอดภัยสูงสุด ภายใต้อุปกรณ์เทคโนโลยีที่ทันสมัยและวิศวกรผู้เชี่ยวชาญ</p>
+                <h3 class="text-2xl font-bold text-[#0A1F33] mb-4">
+                    <span class="lang-th">พันธกิจ</span>
+                    <span class="lang-en hidden">Mission</span>
+                </h3>
+                <p class="text-gray-600">
+                    <span class="lang-th">ส่งมอบงานตรวจสอบที่ถูกต้อง แม่นยำ และปลอดภัยสูงสุด ภายใต้อุปกรณ์เทคโนโลยีที่ทันสมัยและวิศวกรผู้เชี่ยวชาญ</span>
+                    <span class="lang-en hidden">Delivering accurate, precise, and maximum safety inspection services through modern technology and expert engineers.</span>
+                </p>
             </div>
 
             <div class="p-10 bg-gray-50 rounded-2xl border-b-4 border-transparent hover:border-[#4FA3D1] hover:shadow-2xl transition duration-500 group" data-aos="fade-up" data-aos-delay="200">
@@ -453,8 +579,14 @@ footer h3 {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-[#0A1F33] mb-4">ค่านิยม</h3>
-                <p class="text-gray-600">ซื่อสัตย์ในผลการตรวจสอบ (Integrity) และยึดมั่นในความปลอดภัย (Safety First)</p>
+                <h3 class="text-2xl font-bold text-[#0A1F33] mb-4">
+                    <span class="lang-th">ค่านิยม</span>
+                    <span class="lang-en hidden">Core Values</span>
+                </h3>
+                <p class="text-gray-600">
+                    <span class="lang-th">ซื่อสัตย์ในผลการตรวจสอบ (Integrity) และยึดมั่นในความปลอดภัย (Safety First)</span>
+                    <span class="lang-en hidden">Integrity in every inspection result and a commitment to Safety First.</span>
+                </p>
             </div>
 
         </div>
@@ -462,159 +594,223 @@ footer h3 {
 </section>
 
 <section class="max-w-4xl mx-auto py-16 px-6 font-['Prompt']">
-    <h2 class="text-3xl font-bold text-[#0A1F33] mb-4 text-center">คำถามที่พบบ่อย (FAQ)</h2>
-    <p class="text-center text-gray-500 mb-12">รวมข้อสงสัยเกี่ยวกับการตรวจสอบความปลอดภัยตามกฎหมายและงานวิศวกรรม</p>
+    <h2 class="text-3xl font-bold text-[#0A1F33] mb-4 text-center">
+        <span class="lang-th">คำถามที่พบบ่อย (FAQ)</span>
+        <span class="lang-en hidden">Frequently Asked Questions (FAQ)</span>
+    </h2>
+    <p class="text-center text-gray-500 mb-12">
+        <span class="lang-th">รวมข้อสงสัยเกี่ยวกับการตรวจสอบความปลอดภัยตามกฎหมายและงานวิศวกรรม</span>
+        <span class="lang-en hidden">Common questions regarding legal safety inspections and engineering services.</span>
+    </p>
 
     <div class="mb-12">
         <h3 class="text-xl font-semibold text-[#4FA3D1] mb-6 flex items-center">
-            <i class="fas fa-fire-alt mr-2"></i> สถานที่ใช้ก๊าซ LPG
+            <i class="fas fa-fire-alt mr-2"></i> 
+            <span class="lang-th">สถานที่ใช้ก๊าซ LPG</span>
+            <span class="lang-en hidden">LPG Consumption Facilities</span>
         </h3>
         <div class="space-y-4">
             <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
                 <button onclick="toggleFAQ('lpg-1')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: การทดสอบสถานที่ใช้ก๊าซ LPG มีกี่แบบ?</span>
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: การทดสอบสถานที่ใช้ก๊าซ LPG มีกี่แบบ?</span>
+                        <span class="lang-en hidden">Q: How many types of LPG facility testing are there?</span>
+                    </span>
                     <i id="icon-lpg-1" class="fas fa-plus text-gray-400 transition-transform"></i>
                 </button>
                 <div id="lpg-1" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: มี 3 แบบหลัก ได้แก่ การตรวจสอบประจำปี (Annual Inspection), การตรวจสอบวาระ 5 ปี และวาระ 10 ปี ตามที่กฎหมายกรมธุรกิจพลังงานกำหนด
+                    <span class="lang-th">A: มี 3 แบบหลัก ได้แก่ การตรวจสอบประจำปี (Annual Inspection), การตรวจสอบวาระ 5 ปี และวาระ 10 ปี ตามที่กฎหมายกรมธุรกิจพลังงานกำหนด</span>
+                    <span class="lang-en hidden">A: There are 3 main types: Annual Inspection, 5-year interval inspection, and 10-year interval inspection, as mandated by DOEB regulations.</span>
                 </div>
             </div>
 
             <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
                 <button onclick="toggleFAQ('lpg-2')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: ต้องมีการทดสอบสถานที่ใช้ก๊าซ LPG บ่อยแค่ไหน?</span>
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: ต้องมีการทดสอบสถานที่ใช้ก๊าซ LPG บ่อยแค่ไหน?</span>
+                        <span class="lang-en hidden">Q: How often should an LPG facility be tested?</span>
+                    </span>
                     <i id="icon-lpg-2" class="fas fa-plus text-gray-400 transition-transform"></i>
                 </button>
                 <div id="lpg-2" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: ตามกฎหมายต้องดำเนินการตรวจสอบและทดสอบเพื่อรับรองความปลอดภัยเป็นประจำทุก 1 ปี
+                    <span class="lang-th">A: ตามกฎหมายต้องดำเนินการตรวจสอบและทดสอบเพื่อรับรองความปลอดภัยเป็นประจำทุก 1 ปี</span>
+                    <span class="lang-en hidden">A: By law, safety inspection and certification must be conducted annually (every 1 year).</span>
                 </div>
             </div>
 
             <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
                 <button onclick="toggleFAQ('lpg-3')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: การทดสอบประจำปีของก๊าซ LPG จำเป็นต้องหยุดใช้แก๊สหรือไม่?</span>
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: การทดสอบประจำปีของก๊าซ LPG จำเป็นต้องหยุดใช้แก๊สหรือไม่?</span>
+                        <span class="lang-en hidden">Q: Does an annual LPG inspection require a gas shutdown?</span>
+                    </span>
                     <i id="icon-lpg-3" class="fas fa-plus text-gray-400 transition-transform"></i>
                 </button>
                 <div id="lpg-3" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: โดยปกติแล้วการตรวจสอบระบบท่อและจุดรั่วไหลเบื้องต้นสามารถทำได้ขณะใช้งาน แต่การทดสอบแรงดันบางกรณีอาจต้องมีการตัดแยกระบบชั่วคราวเพื่อความปลอดภัย
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mb-12">
-        <h3 class="text-xl font-semibold text-[#4FA3D1] mb-6 flex items-center">
-            <i class="fas fa-oil-can mr-2"></i> ถังน้ำมันเชื้อเพลิง
-        </h3>
-        <div class="space-y-4">
-            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <button onclick="toggleFAQ('oil-1')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: การทดสอบถังน้ำมันต้องทำทุกๆ กี่ปี?</span>
-                    <i id="icon-oil-1" class="fas fa-plus text-gray-400 transition-transform"></i>
-                </button>
-                <div id="oil-1" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: ตามกฎหมายกำหนดให้มีการทดสอบประจำปี และการทดสอบใหญ่ตามวาระทุก 10 ปี (สำหรับถังบนดินและถังใต้ดิน)
-                </div>
-            </div>
-
-            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <button onclick="toggleFAQ('oil-2')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: การทดสอบครบวาระ 10 ปี ของถังน้ำมันแนวนอนต้องทดสอบอะไรบ้าง?</span>
-                    <i id="icon-oil-2" class="fas fa-plus text-gray-400 transition-transform"></i>
-                </button>
-                <div id="oil-2" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: จะมีการทดสอบความหนาผนังถัง (UTM), การตรวจสอบด้วยสายตาอย่างละเอียด (Internal/External Visual Inspection) และการทดสอบความดันระบบท่อ
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mb-12">
-        <h3 class="text-xl font-semibold text-[#4FA3D1] mb-6 flex items-center">
-            <i class="fas fa-drum mr-2"></i> ภาชนะรับแรงดัน
-        </h3>
-        <div class="space-y-4">
-            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <button onclick="toggleFAQ('pv-1')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: การทดสอบภาชนะรับแรงดันต้องทดสอบอะไรบ้าง?</span>
-                    <i id="icon-pv-1" class="fas fa-plus text-gray-400 transition-transform"></i>
-                </button>
-                <div id="pv-1" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: ตรวจสอบความปลอดภัยของอุปกรณ์นิรภัย (Safety Valve), มาตรวัดความดัน (Pressure Gauge), การตรวจสอบความหนา และการทดสอบแรงดันน้ำ (Hydrostatic Test) ตามระยะเวลาที่กำหนด
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mb-12">
-        <h3 class="text-xl font-semibold text-[#4FA3D1] mb-6 flex items-center">
-            <i class="fas fa-search mr-2"></i> บริการตรวจสอบ NDT
-        </h3>
-        <div class="space-y-4">
-            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                <button onclick="toggleFAQ('ndt-1')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: บริการ NDT ของ STD มีอะไรบ้าง และช่วยเรื่องอะไร?</span>
-                    <i id="icon-ndt-1" class="fas fa-plus text-gray-400 transition-transform"></i>
-                </button>
-                <div id="ndt-1" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: เราให้บริการ PT (Liquid Penetrant), MT (Magnetic Particle), UT (Ultrasonic Testing) และ RT (Radiographic Testing) เพื่อหาจุดบกพร่องในแนวเชื่อมหรือโครงสร้างเหล็กโดย "ไม่ทำลายชิ้นงาน" ช่วยลดความเสี่ยงและป้องกันอุบัติเหตุในระยะยาวค่ะ
+                    <span class="lang-th">A: โดยปกติแล้วการตรวจสอบระบบท่อและจุดรั่วไหลเบื้องต้นสามารถทำได้ขณะใช้งาน แต่การทดสอบแรงดันบางกรณีอาจต้องมีการตัดแยกระบบชั่วคราวเพื่อความปลอดภัย</span>
+                    <span class="lang-en hidden">A: Generally, visual piping and initial leak inspections can be done during operation. However, certain pressure tests may require temporary system isolation for safety.</span>
                 </div>
             </div>
         </div>
     </div>
 	
-	<div class="mb-12">
+    <div class="mb-12">
         <h3 class="text-xl font-semibold text-[#4FA3D1] mb-6 flex items-center">
-            <i class="fas fa-handshake mr-2"></i> คำถามด้านการบริการและมาตรฐาน
+            <i class="fas fa-oil-can mr-2"></i> 
+            <span class="lang-th">ถังน้ำมันเชื้อเพลิง</span>
+            <span class="lang-en hidden">Fuel Storage Tanks</span>
+        </h3>
+        <div class="space-y-4">
+            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                <button onclick="toggleFAQ('oil-1')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: การทดสอบถังน้ำมันต้องทำทุกๆ กี่ปี?</span>
+                        <span class="lang-en hidden">Q: How many years between fuel tank inspections?</span>
+                    </span>
+                    <i id="icon-oil-1" class="fas fa-plus text-gray-400 transition-transform"></i>
+                </button>
+                <div id="oil-1" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
+                    <span class="lang-th">A: ตามกฎหมายกำหนดให้มีการทดสอบประจำปี และการทดสอบใหญ่ตามวาระทุก 10 ปี (สำหรับถังบนดินและถังใต้ดิน)</span>
+                    <span class="lang-en hidden">A: By law, annual inspections are required, with major testing occurring every 10 years (for both above-ground and underground tanks).</span>
+                </div>
+            </div>
+
+            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                <button onclick="toggleFAQ('oil-2')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: การทดสอบครบวาระ 10 ปี ของถังน้ำมันแนวนอนต้องทดสอบอะไรบ้าง?</span>
+                        <span class="lang-en hidden">Q: What tests are required for the 10-year major fuel tank inspection?</span>
+                    </span>
+                    <i id="icon-oil-2" class="fas fa-plus text-gray-400 transition-transform"></i>
+                </button>
+                <div id="oil-2" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
+                    <span class="lang-th">A: จะมีการทดสอบความหนาผนังถัง (UTM), การตรวจสอบด้วยสายตาอย่างละเอียด (Internal/External Visual Inspection) และการทดสอบความดันระบบท่อ</span>
+                    <span class="lang-en hidden">A: Testing includes Ultrasonic Thickness Measurement (UTM), detailed Internal/External Visual Inspection, and pipeline pressure testing.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h3 class="text-xl font-semibold text-[#4FA3D1] mb-6 flex items-center">
+            <i class="fas fa-drum mr-2"></i> 
+            <span class="lang-th">ภาชนะรับแรงดัน</span>
+            <span class="lang-en hidden">Pressure Vessels</span>
+        </h3>
+        <div class="space-y-4">
+            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                <button onclick="toggleFAQ('pv-1')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: การทดสอบภาชนะรับแรงดันต้องทดสอบอะไรบ้าง?</span>
+                        <span class="lang-en hidden">Q: What is involved in pressure vessel testing?</span>
+                    </span>
+                    <i id="icon-pv-1" class="fas fa-plus text-gray-400 transition-transform"></i>
+                </button>
+                <div id="pv-1" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
+                    <span class="lang-th">A: ตรวจสอบความปลอดภัยของอุปกรณ์นิรภัย (Safety Valve), มาตรวัดความดัน (Pressure Gauge), การตรวจสอบความหนา และการทดสอบแรงดันน้ำ (Hydrostatic Test) ตามระยะเวลาที่กำหนด</span>
+                    <span class="lang-en hidden">A: Inspection of safety devices (Safety Valves), Pressure Gauges, thickness measurement, and Hydrostatic Testing at specified intervals.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-12">
+        <h3 class="text-xl font-semibold text-[#4FA3D1] mb-6 flex items-center">
+            <i class="fas fa-search mr-2"></i> 
+            <span class="lang-th">บริการตรวจสอบ NDT</span>
+            <span class="lang-en hidden">NDT Inspection Services</span>
+        </h3>
+        <div class="space-y-4">
+            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
+                <button onclick="toggleFAQ('ndt-1')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: บริการ NDT ของ STD มีอะไรบ้าง และช่วยเรื่องอะไร?</span>
+                        <span class="lang-en hidden">Q: What NDT services does STD offer and how do they help?</span>
+                    </span>
+                    <i id="icon-ndt-1" class="fas fa-plus text-gray-400 transition-transform"></i>
+                </button>
+                <div id="ndt-1" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
+                    <span class="lang-th">A: เราให้บริการ PT (Liquid Penetrant), MT (Magnetic Particle), UT (Ultrasonic Testing) และ RT (Radiographic Testing) เพื่อหาจุดบกพร่องในแนวเชื่อมหรือโครงสร้างเหล็กโดย "ไม่ทำลายชิ้นงาน" ช่วยลดความเสี่ยงและป้องกันอุบัติเหตุในระยะยาวค่ะ</span>
+                    <span class="lang-en hidden">A: We provide PT (Liquid Penetrant), MT (Magnetic Particle), UT (Ultrasonic Testing), and RT (Radiographic Testing) to detect flaws in welds or steel structures without damaging the object, reducing risk and preventing long-term accidents.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+<div class="mb-12">
+        <h3 class="text-xl font-semibold text-[#4FA3D1] mb-6 flex items-center">
+            <i class="fas fa-handshake mr-2"></i> 
+            <span class="lang-th">คำถามด้านการบริการและมาตรฐาน</span>
+            <span class="lang-en hidden">Service and Standards FAQ</span>
         </h3>
         <div class="space-y-4">
             <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
                 <button onclick="toggleFAQ('service-1')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: หลังจากตรวจเสร็จแล้ว จะได้รับเล่มรายงานและใบรับรอง (Certificate) ภายในกี่วัน?</span>
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: หลังจากตรวจเสร็จแล้ว จะได้รับเล่มรายงานและใบรับรอง (Certificate) ภายในกี่วัน?</span>
+                        <span class="lang-en hidden">Q: How many days until I receive the inspection report and certificate?</span>
+                    </span>
                     <i id="icon-service-1" class="fas fa-plus text-gray-400 transition-transform"></i>
                 </button>
                 <div id="service-1" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: ทางเราเข้าใจความเร่งด่วนของลูกค้า โดยปกติจะดำเนินการจัดส่งเล่มรายงานฉบับสมบูรณ์ภายใน 7 วันทำการ หลังจากตรวจสอบหน้างานเสร็จสิ้นค่ะ (หรือตามข้อตกลงพิเศษกรณีงานเร่งด่วน)
+                    <span class="lang-th">A: ทางเราเข้าใจความเร่งด่วนของลูกค้า โดยปกติจะดำเนินการจัดส่งเล่มรายงานฉบับสมบูรณ์ภายใน 7 วันทำการ หลังจากตรวจสอบหน้างานเสร็จสิ้นค่ะ (หรือตามข้อตกลงพิเศษกรณีงานเร่งด่วน)</span>
+                    <span class="lang-en hidden">A: We understand our clients' urgency. Typically, the complete report is delivered within 7 working days after the on-site inspection (or per special agreement for urgent cases).</span>
                 </div>
             </div>
 
             <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
                 <button onclick="toggleFAQ('service-2')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: ทีมงานที่เข้าตรวจมีใบอนุญาตระดับไหน และเชื่อถือได้หรือไม่?</span>
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: ทีมงานที่เข้าตรวจมีใบอนุญาตระดับไหน และเชื่อถือได้หรือไม่?</span>
+                        <span class="lang-en hidden">Q: What are the qualifications of the inspection team? Are they reliable?</span>
+                    </span>
                     <i id="icon-service-2" class="fas fa-plus text-gray-400 transition-transform"></i>
                 </button>
                 <div id="service-2" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: ทีมวิศวกรของเราทุกคนมีใบอนุญาตประกอบวิชาชีพวิศวกรรมควบคุม (กว.) และได้รับวุฒิบัตรเฉพาะทางด้านการตรวจสอบ (เช่น ASNT Level II สำหรับงาน NDT) ตามมาตรฐานสากลและกรมธุรกิจพลังงานค่ะ
+                    <span class="lang-th">A: ทีมวิศวกรของเราทุกคนมีใบอนุญาตประกอบวิชาชีพวิศวกรรมควบคุม (กว.) และได้รับวุฒิบัตรเฉพาะทางด้านการตรวจสอบ (เช่น ASNT Level II สำหรับงาน NDT) ตามมาตรฐานสากลและกรมธุรกิจพลังงานค่ะ</span>
+                    <span class="lang-en hidden">A: All our engineers hold Professional Engineering licenses and specialized certifications (e.g., ASNT Level II for NDT) in accordance with international standards and DOEB regulations.</span>
                 </div>
             </div>
 
             <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
                 <button onclick="toggleFAQ('service-3')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: รับงานทั่วประเทศไหม?</span>
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: รับงานทั่วประเทศไหม?</span>
+                        <span class="lang-en hidden">Q: Do you provide services nationwide?</span>
+                    </span>
                     <i id="icon-service-3" class="fas fa-plus text-gray-400 transition-transform"></i>
                 </button>
                 <div id="service-3" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: ถึงแม้สำนักงานหลักเราจะอยู่ที่ปทุมธานี แต่เรายินดีให้บริการลูกค้าทุกนิคมอุตสาหกรรมและทุกพื้นที่ทั่วประเทศไทยค่ะ ทีมงานเราพร้อมเดินทางไปถึงหน้างานของท่าน
+                    <span class="lang-th">A: ถึงแม้สำนักงานหลักเราจะอยู่ที่ปทุมธานี แต่เรายินดีให้บริการลูกค้าทุกนิคมอุตสาหกรรมและทุกพื้นที่ทั่วประเทศไทยค่ะ ทีมงานเราพร้อมเดินทางไปถึงหน้างานของท่าน</span>
+                    <span class="lang-en hidden">A: Although our main office is in Pathum Thani, we provide services to all industrial estates and areas throughout Thailand. Our team is ready to travel to your site.</span>
                 </div>
             </div>
 
             <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
                 <button onclick="toggleFAQ('service-4')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: สามารถขอใบเสนอราคาล่วงหน้าได้หรือไม่ และต้องใช้ข้อมูลอะไรบ้าง?</span>
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: สามารถขอใบเสนอราคาล่วงหน้าได้หรือไม่ และต้องใช้ข้อมูลอะไรบ้าง?</span>
+                        <span class="lang-en hidden">Q: Can I request a quotation in advance? What information is needed?</span>
+                    </span>
                     <i id="icon-service-4" class="fas fa-plus text-gray-400 transition-transform"></i>
                 </button>
                 <div id="service-4" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: ได้แน่นอนค่ะ คุณลูกค้าสามารถส่งรูปถ่ายหน้างาน ตำแหน่งพิกัด หรือรายละเอียดอุปกรณ์มาให้เราทาง Line หรือ Email เพื่อประเมินราคาเบื้องต้นได้ทันที เราออกใบเสนอราคาให้รวดเร็วภายใน 1-2 วันค่ะ
+                    <span class="lang-th">A: ได้แน่นอนค่ะ คุณลูกค้าสามารถส่งรูปถ่ายหน้างาน ตำแหน่งพิกัด หรือรายละเอียดอุปกรณ์มาให้เราทาง Line หรือ Email เพื่อประเมินราคาเบื้องต้นได้ทันที เราออกใบเสนอราคาให้รวดเร็วภายใน 1-2 วันค่ะ</span>
+                    <span class="lang-en hidden">A: Certainly. You can send site photos, location coordinates, or equipment details via Line or Email for an initial assessment. We typically issue quotations within 1-2 days.</span>
                 </div>
             </div>
 
             <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm">
                 <button onclick="toggleFAQ('service-5')" class="w-full flex justify-between items-center p-5 text-left bg-white hover:bg-gray-50 transition">
-                    <span class="font-medium text-gray-700">Q: หากตรวจสอบแล้วพบจุดที่ "ไม่ผ่าน" ทางบริษัทมีคำแนะนำอย่างไร?</span>
+                    <span class="font-medium text-gray-700">
+                        <span class="lang-th">Q: หากตรวจสอบแล้วพบจุดที่ "ไม่ผ่าน" ทางบริษัทมีคำแนะนำอย่างไร?</span>
+                        <span class="lang-en hidden">Q: What happens if an inspection fails? Do you offer advice?</span>
+                    </span>
                     <i id="icon-service-5" class="fas fa-plus text-gray-400 transition-transform"></i>
                 </button>
                 <div id="service-5" class="hidden p-5 bg-gray-50 text-gray-600 border-t border-gray-100">
-                    A: เราไม่เพียงแค่ตรวจหาจุดบกพร่อง แต่เรามีวิศวกรคอยให้คำแนะนำในการแก้ไข (Consultant) ให้ถูกต้องตามมาตรฐานและปลอดภัยที่สุด เพื่อให้ท่านสามารถดำเนินการปรับปรุงและขอรับรองได้ในขั้นตอนต่อไปค่ะ
+                    <span class="lang-th">A: เราไม่เพียงแค่ตรวจหาจุดบกพร่อง แต่เรามีวิศวกรคอยให้คำแนะนำในการแก้ไข (Consultant) ให้ถูกต้องตามมาตรฐานและปลอดภัยที่สุด เพื่อให้ท่านสามารถดำเนินการปรับปรุงและขอรับรองได้ในขั้นตอนต่อไปค่ะ</span>
+                    <span class="lang-en hidden">A: We don't just find flaws; our engineers provide consultancy on how to fix them according to standards and safety requirements, ensuring you can complete improvements and gain certification.</span>
                 </div>
             </div>
         </div>

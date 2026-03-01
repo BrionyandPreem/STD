@@ -238,17 +238,22 @@ footer h3 {
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
     </button>
-</script><nav class="bg-[#14183d] text-white py-4 sticky top-0 z-[1000] shadow-xl">
+</script>
 
+<nav class="bg-[#14183d] text-white py-4 sticky top-0 z-[1000] shadow-xl">
     <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
-        <div class="flex items-center space-x-2">
-            <img src="STD.jpg" alt="Logo" class="h-12 w-auto">
-            <div class="leading-none">
-                <span class="text-xl font-bold tracking-tighter block">ENGINEERING AND</span>
-                <span class="text-[10px] text-[#4FA3D1] tracking-[0.2em] uppercase">CONSTRUCTION CO.,LTD.</span>
-            </div>
-        </div>
+      <div class="flex items-center space-x-1"> 
+	    <img src="STD 4.jpg" alt="Logo" class="h-12 w-auto object-contain">
+        <div class="leading-none -ml-1">
+        <span class="text-[19px] font-semibold block tracking-[0.1em] text-white">
+            ENGINEERING <span class="text-[14px] font-light opacity-80">AND</span>
+        </span>
+        <span class="text-[10px] text-[#4FA3D1] tracking-[0.3em] uppercase font-medium block mt-0.5">
+            CONSTRUCTION CO.,LTD.
+        </span>
+    </div>
+</div>
 
 <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
     <a href="index.html" class="hover:text-[#4FA3D1] transition">
@@ -259,59 +264,167 @@ footer h3 {
     </a>
     
     <div class="nav-item group">
-        <a href="services.html" class="nav-link flex items-center hover:text-[#4FA3D1] transition">
-            <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
-            <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+    <a href="services.html" class="nav-link flex items-center hover:text-[#4FA3D1] transition">
+        <span class="lang-th">บริการ</span><span class="lang-en hidden">Services</span>
+        <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+    </a>
+
+    <div class="dropdown">
+
+        <!-- LPG -->
+        <div class="dropdown-item sub-menu">
+            <a href="LPG.html">
+                <i class="fas fa-fire"></i> 
+                <span class="lang-th">ก๊าซปิโตรเลียมเหลว (LPG)</span>
+                <span class="lang-en hidden">Liquefied Petroleum Gas (LPG)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่ใช้ LPG / โรงบรรจุ / คลังก๊าซ</span>
+                    <span class="lang-en hidden">LPG Utilization Facilities / Filling Plants / Gas Depots</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 5 ปี</span>
+                    <span class="lang-en hidden">Five-Year Periodic Inspection and Certification</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">รถขนส่งก๊าซ LPG</span>
+                    <span class="lang-en hidden">LPG Transportation Vehicles</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี / ครบวาระ</span>
+                    <span class="lang-en hidden">Annual and Periodic Compliance Inspection</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- NG -->
+        <div class="dropdown-item sub-menu">
+            <a href="ng.html">
+                <i class="fas fa-gas-pump"></i> 
+                <span class="lang-th">ก๊าซธรรมชาติ (NGV/NG)</span>
+                <span class="lang-en hidden">Natural Gas (NGV/NG)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่ใช้ / รถขนส่ง / สถานีบริการ</span>
+                    <span class="lang-en hidden">Utilization Sites / Transport Vehicles / Service Stations</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 3 ปี</span>
+                    <span class="lang-en hidden">Three-Year Periodic Inspection</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 5 ปี</span>
+                    <span class="lang-en hidden">Five-Year Periodic Inspection</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 10 ปี (สถานี/รถ)</span>
+                    <span class="lang-en hidden">Ten-Year Major Inspection (Stations/Vehicles)</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- OIL -->
+        <div class="dropdown-item sub-menu">
+            <a href="oil.html">
+                <i class="fas fa-oil-can"></i> 
+                <span class="lang-th">น้ำมันเชื้อเพลิง (OIL)</span>
+                <span class="lang-en hidden">Fuel Oil (OIL)</span>
+                <i class="fas fa-chevron-right float-right mt-1"></i>
+            </a>
+
+            <div class="sub-dropdown">
+
+                <div class="sub-header">
+                    <span class="lang-th">สถานที่เก็บ / สถานีบริการ</span>
+                    <span class="lang-en hidden">Storage Facilities / Service Stations</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี</span>
+                    <span class="lang-en hidden">Annual Inspection and Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 10 ปี</span>
+                    <span class="lang-en hidden">Ten-Year Periodic Inspection</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">คลังน้ำมัน</span>
+                    <span class="lang-en hidden">Oil Depots and Terminals</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบประจำปี / ครบวาระ 15 ปี</span>
+                    <span class="lang-en hidden">Annual and Fifteen-Year Compliance Inspection</span>
+                </a>
+
+                <div class="sub-header">
+                    <span class="lang-th">รถขนส่งน้ำมัน</span>
+                    <span class="lang-en hidden">Fuel Transportation Vehicles</span>
+                </div>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบระบบ VRU</span>
+                    <span class="lang-en hidden">Vapor Recovery Unit (VRU) System Testing</span>
+                </a>
+
+                <a href="#">
+                    <span class="lang-th">งานทดสอบครบวาระ 6 ปี</span>
+                    <span class="lang-en hidden">Six-Year Periodic Inspection</span>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Other Services -->
+        <a href="write.html" class="dropdown-item">
+            <i class="fas fa-pencil-ruler"></i> 
+            <span class="lang-th">เขียนแบบและรายการคำนวณ</span>
+            <span class="lang-en hidden">Engineering Drawings and Design Calculations</span>
         </a>
-		
- <div class="dropdown">
-    <div class="dropdown-item sub-menu">
-        <a href="LPG.html"><i class="fas fa-fire"></i> ก๊าซปิโตรเลียมเหลว (LPG) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่ใช้ LPG / โรงบรรจุ / คลังก๊าซ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 5 ปี</a>
-            <div class="sub-header">รถขนส่งก๊าซ LPG</div>
-            <a href="#">งานทดสอบประจำปี / ครบวาระ</a>
-        </div>
-    </div>
 
-    <div class="dropdown-item sub-menu">
-        <a href="ng.html"><i class="fas fa-gas-pump"></i> ก๊าซธรรมชาติ (NG/NGV) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่ใช้ / รถขนส่ง / สถานีบริการ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 3 ปี</a>
-            <a href="#">งานทดสอบครบวาระ 5 ปี</a>
-            <a href="#">งานทดสอบครบวาระ 10 ปี (สถานี/รถ)</a>
-        </div>
-    </div>
+        <a href="ndt.html" class="dropdown-item">
+            <i class="fas fa-search"></i> 
+            <span class="lang-th">งานตรวจสอบแบบไม่ทำลาย</span>
+            <span class="lang-en hidden">Non-Destructive Testing (NDT) Services</span>
+        </a>
 
-    <div class="dropdown-item sub-menu">
-        <a href="oil.html"><i class="fas fa-oil-can"></i> น้ำมันเชื้อเพลิง (OIL) <i class="fas fa-chevron-right float-right mt-1"></i></a>
-        <div class="sub-dropdown">
-            <div class="sub-header">สถานที่เก็บ / สถานีบริการ</div>
-            <a href="#">งานทดสอบประจำปี</a>
-            <a href="#">งานทดสอบครบวาระ 10 ปี</a>
-            <div class="sub-header">คลังน้ำมัน</div>
-            <a href="#">งานทดสอบประจำปี / ครบวาระ 15 ปี</a>
-            <div class="sub-header">รถขนส่งน้ำมัน</div>
-            <a href="#">งานทดสอบระบบ VRU</a>
-            <a href="#">งานทดสอบครบวาระ 6 ปี</a>
-        </div>
-    </div>
+        <a href="coor.html" class="dropdown-item">
+            <i class="fas fa-search"></i> 
+            <span class="lang-th">ประสานงานกรมธุรกิจพลังงานและพลังงานจังหวัด</span>
+            <span class="lang-en hidden">Regulatory Coordination with the Department of Energy Business and Provincial Energy Offices</span>
+        </a>
 
-    <a href="write.html" class="dropdown-item"><i class="fas fa-pencil-ruler"></i> เขียนแบบและรายการคำนวณ</a>
-    <a href="ndt.html" class="dropdown-item"><i class="fas fa-search"></i> งานตรวจสอบแบบไม่ทำลาย</a>
-	<a href="coor.html" class="dropdown-item"><i class="fas fa-search"></i> ประสานงานกรมธุรกิจพลังงานและพลังงานจังหวัด</a>
-	
-</div>
+    </div>
 </div>
 
     <a href="article.html" class="hover:text-[#4FA3D1] transition">
         <span class="lang-th">บทความ</span><span class="lang-en hidden">Articles</span>
     </a>
-    <a href="projects0.html" class="hover:text-[#4FA3D1] transition">
+    <a href="projects.html" class="hover:text-[#4FA3D1] transition">
         <span class="lang-th">ผลงาน</span><span class="lang-en hidden">Projects</span>
     </a>
     <a href="contact.html" class="hover:text-[#4FA3D1] transition">
@@ -391,27 +504,33 @@ footer h3 {
     </div>
 </nav>
 
-<section class="lpg-inspection-page py-16 bg-[#F8FAFC] font-['Prompt']">
+<section class="ndt-inspection-page py-16 bg-[#F8FAFC] font-['Prompt']">
     <div class="max-w-6xl mx-auto px-6">
         
         <div class="bg-[#1E293B] rounded-3xl p-8 mb-12 shadow-2xl relative overflow-hidden border-b-4 border-[#3B82F6]">
             <div class="relative z-10">
                 <div class="flex items-center gap-3 mb-4">
-                    <h2 class="text-2xl font-bold text-white">ก๊าซปิโตรเลียมเหลว (Liquefied Petroleum Gas: LPG)</h2>
+                    <h2 class="text-2xl font-bold text-white">
+                        <span class="lang-th">การตรวจสอบแบบไม่ทำลาย (NDT)</span>
+                        <span class="lang-en hidden">Non-Destructive Testing (NDT)</span>
+                    </h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div class="text-gray-300 text-sm leading-relaxed">
-                        <p class="mb-4">คือก๊าซเชื้อเพลิงที่ได้จากการกลั่นน้ำมันดิบและการแยกก๊าซธรรมชาติ มีองค์ประกอบหลักคือโพรเพนและบิวเทน สามารถอัดให้เป็นของเหลวภายใต้ความดันเพื่อความสะดวกในการเก็บในถังแรงดันขนาดใหญ่ และเมื่อใช้งานจะลดความดัน
-						ให้ระเหยกลับเป็นก๊าซเพื่อจ่ายเข้าสู่ระบบท่อภายในอาคารหรือโรงงาน LPG ให้ค่าความร้อนสูง เผาไหม้สะอาด ควบคุมเปลวไฟได้ดี จึงเหมาะสำหรับงานครัวเชิงพาณิชย์ในโรงแรม งานซักอบรีด ระบบหม้อไอน้ำ เตาเผา และกระบวนการผลิตต่าง ๆ ในโรงงาน
-						อุตสาหกรรม อย่างไรก็ตาม เนื่องจากเป็นก๊าซที่ติดไฟง่ายและหนักกว่าอากาศ หากรั่วไหลจะสะสมในพื้นที่ต่ำ จึงต้องออกแบบ ติดตั้ง และตรวจสอบระบบถังเก็บ ท่อ วาล์ว และอุปกรณ์ความปลอดภัยตามมาตรฐานวิศวกรรมอย่างเคร่งครัด เพื่อให้การใช้งานมีประสิทธิภาพและปลอดภัยสูงสุด</p>
+                        <p class="mb-4">
+                            <span class="lang-th">คือกระบวนการตรวจสอบวัสดุหรือชิ้นส่วนทางวิศวกรรมโดยไม่ทำให้ชิ้นงานเกิดความเสียหาย เพื่อหาจุดบกพร่องภายใน เช่น รอยร้าว รอยรั่ว หรือความไม่สมบูรณ์ของแนวเชื่อม ซึ่งจำเป็นอย่างยิ่งสำหรับการตรวจสอบถังแรงดันสูง (Pressure Vessels) และระบบท่อส่งก๊าซ เพื่อประเมินความปลอดภัยและอายุการใช้งานของอุปกรณ์ก่อนเกิดความเสียหายจริง</span>
+                            <span class="lang-en hidden">Non-Destructive Testing (NDT) is an inspection process used to evaluate the properties of a material, component, or system without causing damage. It is essential for detecting internal defects, cracks, or welding imperfections in pressure vessels and piping systems, ensuring safety and integrity before any structural failure occurs.</span>
+                        </p>
                     </div>
                     <div class="bg-red-500/10 border border-red-500/20 p-5 rounded-2xl">
                         <h4 class="text-[#FB7185] font-bold mb-2 flex items-center gap-2">
-                            <i class="fas fa-exclamation-triangle"></i> กฎหมาย
+                            <i class="fas fa-microscope"></i> 
+                            <span class="lang-th">ความแม่นยำสูง</span>
+                            <span class="lang-en hidden">High Precision</span>
                         </h4>
                         <p class="text-gray-300 text-xs leading-loose">
-                            หากไม่ตรวจระบบก๊าซปิโตรเลียมเหลว (LPG) ตามรอบที่กฎหมายกำหนด ผู้ประกอบการอาจถูกปรับ ถูกสั่งระงับการใช้งาน หรือสั่งปิดกิจการชั่วคราว และในกรณีร้ายแรงอาจถูกเพิกถอนใบอนุญาต นอกจากนี้ยังเพิ่มความเสี่ยงต่อการรั่วไหล ไฟไหม้
-							หรือระเบิด หากเกิดอุบัติเหตุ บริษัทประกันอาจไม่คุ้มครอง ทำให้ต้องรับผิดชอบค่าเสียหายเองทั้งหมด จึงควรตรวจสอบตามวาระเพื่อความปลอดภัยและป้องกันความเสี่ยงทางกฎหมายและธุรกิจ
+                            <span class="lang-th">การเลือกใช้วิธี NDT ที่เหมาะสมช่วยให้สามารถตรวจพบจุดบกพร่องที่มองไม่เห็นด้วยตาเปล่า ลดความเสี่ยงในการระเบิดหรือรั่วไหลของสารอันตราย และช่วยประหยัดค่าใช้จ่ายในการซ่อมแซมใหญ่ในอนาคต โดยทีมผู้เชี่ยวชาญที่ได้รับการรับรองมาตรฐานสากล</span>
+                            <span class="lang-en hidden">Utilizing appropriate NDT methods allows for the detection of defects invisible to the naked eye. This minimizes the risk of explosions or hazardous leaks, helping to prevent costly major repairs. Our inspections are conducted by certified experts following international standards.</span>
                         </p>
                     </div>
                 </div>
@@ -421,48 +540,69 @@ footer h3 {
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
             <div class="gallery-block">
                 <div class="relative rounded-2xl overflow-hidden shadow-lg border-4 border-white mb-4">
-                    <img id="mainDisplay" src="lpg3.jpg" class="w-full h-[350px] object-cover transition-opacity duration-300">
+                    <img id="mainDisplay" src="n2.jpg" class="w-full h-[350px] object-cover transition-opacity duration-300">
                 </div>
                 <div class="flex gap-3 overflow-x-auto pb-2">
-                    <img src="lpg1.jpg" onclick="updatePreview(this.src)" class="thumb-node active">
-                    <img src="lpg2.jpg" onclick="updatePreview(this.src)" class="thumb-node">
-					<img src="lpg3.jpg" onclick="updatePreview(this.src)" class="thumb-node">
-                    <img src="lpg4.jpg" onclick="updatePreview(this.src)" class="thumb-node">
-   				   <img src="lpg5.jpg" onclick="updatePreview(this.src)" class="thumb-node">
+                    <img src="n1.jpg" onclick="updatePreview(this.src)" class="thumb-node active w-20 h-20 object-cover rounded-lg cursor-pointer">
+                    <img src="n2.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
+                    <img src="n3.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
+                    <img src="n4.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
+                    <img src="n5.jpg" onclick="updatePreview(this.src)" class="thumb-node w-20 h-20 object-cover rounded-lg cursor-pointer">
                 </div>
             </div>
 
             <div class="services-info">
                 <h3 class="text-2xl font-bold text-[#1E293B] mb-8 flex items-center gap-3">
-                    ขอบข่ายงานบริการตรวจสอบ LPG
+                    <span class="lang-th">ขอบข่ายงานบริการตรวจสอบ NDT</span>
+                    <span class="lang-en hidden">NDT Service Scope</span>
                 </h3>
                 <div class="space-y-6">
-                    <div class="service-box">
-                        <h5>การตรวจสอบสถานที่ใช้ก๊าซปิโตรเลียมเหลว </h5>
-                        <ul class="text-sm space-y-1">
-                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจเพื่อต่ออายุประจำปี</li>
-                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจกรณีครบวาระ 5ปี</li>
-                        </ul>
-                    </div>
-                    <div class="service-box">
-                        <h5>การตรวจสอบโรงบรรจุก๊าซ</h5>
-                        <ul class="text-sm space-y-1">
-                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจเพื่อต่ออายุประจำปี</li>
-                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจกรณีครบวาระ 5 ปี</li>
-                        </ul>
-                    </div>
-                    <div class="service-box">
-                        <h5>การตรวจสอบคลังก๊าซปิโตรเลียมเหลว</h5>
-                        <ul class="text-sm space-y-1">
-                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจเพื่อต่ออายุประจำปี</li>
-                            <li><i class="fas fa-check text-[#3B82F6]"></i>  กรณีครบวาระ 5ปี</li>
-                        </ul>
-                    </div>
-                    <div class="service-box border-none">
-                        <h5>การตรวจสอบรถขนส่งก๊าซปิโตรเลียมเหลว</h5>
-                        <ul class="text-sm space-y-1">
-                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจเพื่อต่ออายุประจำปี</li>
-                            <li><i class="fas fa-check text-[#3B82F6]"></i> งานทดสอบและตรวจกรณีครบวาระ </li>
+                    <div class="service-box p-5 border-l-4 border-[#3B82F6] bg-white rounded-r-xl shadow-sm">
+                        <h5 class="font-bold mb-4">
+                            <span class="lang-th">เทคนิคการทดสอบแบบไม่ทำลาย</span>
+                            <span class="lang-en hidden">NDT Techniques & Methods</span>
+                        </h5>
+                        <ul class="text-sm space-y-3">
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-[#3B82F6] mt-1"></i>
+                                <div>
+                                    <strong class="block">Radiographic Testing (RT)</strong>
+                                    <span class="lang-th">การทดสอบโดยใช้รังสี</span>
+                                    <span class="lang-en hidden">Internal defect detection via X-ray/Gamma ray</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-[#3B82F6] mt-1"></i>
+                                <div>
+                                    <strong class="block">Magnetic Particle Testing (MT)</strong>
+                                    <span class="lang-th">การทดสอบโดยอนุภาคแม่เหล็ก</span>
+                                    <span class="lang-en hidden">Surface and near-surface flaw detection</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-[#3B82F6] mt-1"></i>
+                                <div>
+                                    <strong class="block">Liquid Penetrant Testing (PT)</strong>
+                                    <span class="lang-th">การทดสอบโดยใช้สารแทรกซึม</span>
+                                    <span class="lang-en hidden">Surface breaking defect detection</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-[#3B82F6] mt-1"></i>
+                                <div>
+                                    <strong class="block">Ultrasonic Testing (UT)</strong>
+                                    <span class="lang-th">การทดสอบโดยใช้คลื่นความถี่สูง</span>
+                                    <span class="lang-en hidden">Flaw detection and sizing using sound waves</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fas fa-check-circle text-[#3B82F6] mt-1"></i>
+                                <div>
+                                    <strong class="block">Ultrasonic Thickness Measurement (UTM)</strong>
+                                    <span class="lang-th">การทดสอบวัดความหนาของเนื้อวัสดุ</span>
+                                    <span class="lang-en hidden">Accurate material thickness gauging</span>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
